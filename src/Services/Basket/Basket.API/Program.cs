@@ -60,11 +60,11 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                         listenOptions => { listenOptions.Protocols = HttpProtocols.Http2; });
                 })
                 .ConfigureAppConfiguration(x => x.AddConfiguration(configuration))
-                .UseFailing(options =>
-                {
-                    options.ConfigPath = "/Failing";
-                    options.NotFilteredPaths.AddRange(new[] {"/hc", "/liveness"});
-                })
+                // .UseFailing(options =>
+                // {
+                //     options.ConfigPath = "/Failing";
+                //     options.NotFilteredPaths.AddRange(new[] {"/hc", "/liveness"});
+                // })
                 .UseStartup<Startup>()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseSerilog()

@@ -33,6 +33,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
+using Basket.Application;
 using GrpcBasket;
 using Microsoft.AspNetCore.Http.Features;
 using Serilog;
@@ -53,8 +54,6 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
         {
             services.AddGrpc(options => { options.EnableDetailedErrors = true; });
 
-            RegisterAppInsights(services);
-
             services.AddControllers(options =>
                 {
                     options.Filters.Add(typeof(HttpGlobalExceptionFilter));
@@ -72,29 +71,29 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                     Description = "The Basket Service HTTP API"
                 });
 
-                options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-                {
-                    Type = SecuritySchemeType.OAuth2,
-                    Flows = new OpenApiOAuthFlows()
-                    {
-                        Implicit = new OpenApiOAuthFlow()
-                        {
-                            AuthorizationUrl =
-                                new Uri($"{Configuration.GetValue<string>("IdentityUrlExternal")}/connect/authorize"),
-                            TokenUrl =
-                                new Uri($"{Configuration.GetValue<string>("IdentityUrlExternal")}/connect/token"),
-                            Scopes = new Dictionary<string, string>()
-                            {
-                                {"basket", "Basket API"}
-                            }
-                        }
-                    }
-                });
-
-                options.OperationFilter<AuthorizeCheckOperationFilter>();
+                // options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                // {
+                //     Type = SecuritySchemeType.OAuth2,
+                //     Flows = new OpenApiOAuthFlows()
+                //     {
+                //         Implicit = new OpenApiOAuthFlow()
+                //         {
+                //             AuthorizationUrl =
+                //                 new Uri($"{Configuration.GetValue<string>("IdentityUrlExternal")}/connect/authorize"),
+                //             TokenUrl =
+                //                 new Uri($"{Configuration.GetValue<string>("IdentityUrlExternal")}/connect/token"),
+                //             Scopes = new Dictionary<string, string>()
+                //             {
+                //                 {"basket", "Basket API"}
+                //             }
+                //         }
+                //     }
+                // });
+                //
+                // options.OperationFilter<AuthorizeCheckOperationFilter>();
             });
 
-            ConfigureAuthService(services);
+            //ConfigureAuthService(services);
 
             services.AddCustomHealthCheck(Configuration);
 
@@ -189,13 +188,13 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                     setup.SwaggerEndpoint(
                         $"{(!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty)}/swagger/v1/swagger.json",
                         "Basket.API V1");
-                    setup.OAuthClientId("basketswaggerui");
-                    setup.OAuthAppName("Basket Swagger UI");
+                    // setup.OAuthClientId("basketswaggerui");
+                    // setup.OAuthAppName("Basket Swagger UI");
                 });
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
 
             app.UseStaticFiles();
 
