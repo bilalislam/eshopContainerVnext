@@ -1,6 +1,6 @@
 using System;
 
-namespace Basket.Domain.Aggregates
+namespace Basket.Domain.Events
 {
     /// <summary>
     ///  Supertype for all Event types

@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+using Basket.Domain.Contracts;
+
+namespace Basket.Domain.Assemblers.Interfaces
 {
-  public interface $INTERFACE$ {$END$}
+    public interface IBasketAssembler
+    {
+        BasketContract ToContract(Aggregates.Basket basket);
+    }
 }

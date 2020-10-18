@@ -1,9 +1,11 @@
-using Basket.Domain.DomainDtos;
 using MediatR;
 
 namespace Basket.Domain.Commands.GetBasketById
 {
-    public class GetBasketByIdCommand : IRequest<BasketDto>
+    /// <summary>
+    /// Command must be immutable
+    /// </summary>
+    public class GetBasketByIdCommand : IRequest<GetBasketIdCommandResult>
     {
         public string Id { get; set; }
     }

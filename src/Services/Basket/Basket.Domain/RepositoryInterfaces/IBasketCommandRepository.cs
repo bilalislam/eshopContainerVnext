@@ -1,4 +1,4 @@
-namespace Basket.Domain.Repositories
+namespace Basket.Domain.RepositoryInterfaces
 {
     public interface IBasketCommandRepository
     {

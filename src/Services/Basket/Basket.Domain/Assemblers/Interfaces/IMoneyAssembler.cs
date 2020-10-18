@@ -1,4 +1,10 @@
-$HEADER$namespace $NAMESPACE$
+using Basket.Domain.Contracts;
+using Basket.Domain.ValueObjects;
+
+namespace Basket.Domain.Assemblers.Interfaces
 {
-  public interface $INTERFACE$ {$END$}
+    public interface IMoneyAssembler
+    {
+        MoneyContract ToContract(Money money);
+    }
 }

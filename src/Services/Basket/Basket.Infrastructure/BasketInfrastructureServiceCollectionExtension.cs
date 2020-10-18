@@ -1,4 +1,17 @@
-$HEADER$namespace $NAMESPACE$
+using System.Diagnostics.CodeAnalysis;
+using Basket.Domain.RepositoryInterfaces;
+using Basket.Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Basket.Infrastructure
 {
-  public class $CLASS$ {$END$}
+    [ExcludeFromCodeCoverage]
+    public static class BasketInfrastructureServiceCollectionExtension
+    {
+        public static IServiceCollection AddBasketInfrastructureComponents(this IServiceCollection services)
+        {
+            services.AddScoped<IBasketQueryRepository, BasketQueryRepository>();
+            return services;
+        }
+    }
 }

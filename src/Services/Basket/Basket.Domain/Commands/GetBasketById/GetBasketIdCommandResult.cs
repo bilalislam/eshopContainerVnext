@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+using Basket.Domain.Contracts;
+
+namespace Basket.Domain.Commands.GetBasketById
 {
-  public class $CLASS$ {$END$}
+    public class GetBasketIdCommandResult
+    {
+        public BasketContract BasketContract { get; set; }
+    }
 }

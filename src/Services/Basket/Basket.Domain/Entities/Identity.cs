@@ -1,4 +1,10 @@
-$HEADER$namespace $NAMESPACE$
+namespace Basket.Domain.Entities
 {
-  public class $CLASS$ {$END$}
+    /// <summary>
+    /// Supertype for all Identity types with generic Id
+    /// </summary>
+    public interface IIdentity<TId>
+    {
+        TId Id { get; }
+    }
 }
