@@ -7,19 +7,17 @@ using Basket.Domain.Events;
 
 namespace Basket.Domain.Aggregates
 {
-    public interface IAggregateRoot<TId>
+    public interface IAggregateRootWithId<TId>
     {
         List<IEvent> GetUncommittedEvents();
         void ClearUncommittedEvents();
-
-        IAggregateRoot<TId> AddEvent(IEvent uncommittedEvent);
     }
 
     [ExcludeFromCodeCoverage]
-    public abstract class AggregateRootBase<TId> : EntityBase<TId>, IAggregateRoot<TId>
+    public abstract class AggregateRootBase<TId> : EntityBase<TId>, IAggregateRootWithId<TId>
     {
         private readonly IDictionary<Type, Action<object>> _handlers = new ConcurrentDictionary<Type, Action<object>>();
-        private readonly List<IEvent> _uncommittedEvents = new List<IEvent>();
+        private List<IEvent> _uncommittedEvents = new List<IEvent>();
 
         protected AggregateRootBase() : this(default)
         {
@@ -31,20 +29,11 @@ namespace Basket.Domain.Aggregates
 
         public int Version { get; protected set; }
 
-        public IAggregateRoot<TId> AddEvent(IEvent uncommittedEvent)
+        protected void AddEvent(IEvent uncommittedEvent)
         {
-            _uncommittedEvents.Add(uncommittedEvent);
-            ApplyEvent(uncommittedEvent);
-            return this;
-        }
-
-        public IAggregateRoot<TId> ApplyEvent(IEvent payload)
-        {
-            if (!_handlers.ContainsKey(payload.GetType()))
-                return this;
-            _handlers[payload.GetType()]?.Invoke(payload);
+            _uncommittedEvents ??= new List<IEvent>();
             Version++;
-            return this;
+            _uncommittedEvents.Add(uncommittedEvent);
         }
 
         public void ClearUncommittedEvents()

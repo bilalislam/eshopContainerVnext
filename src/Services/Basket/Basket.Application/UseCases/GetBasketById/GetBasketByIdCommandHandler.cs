@@ -1,7 +1,9 @@
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Domain.Assemblers.Interfaces;
 using Basket.Domain.Commands.GetBasketById;
+using Basket.Domain.Entities;
 using Basket.Domain.RepositoryInterfaces;
 using MediatR;
 
