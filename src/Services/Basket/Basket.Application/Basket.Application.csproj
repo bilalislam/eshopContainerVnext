@@ -9,10 +9,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="UseCases\CheckoutBasket" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Basket.Domain\Basket.Domain.csproj" />
       <ProjectReference Include="..\Basket.Infrastructure\Basket.Infrastructure.csproj" />
     </ItemGroup>

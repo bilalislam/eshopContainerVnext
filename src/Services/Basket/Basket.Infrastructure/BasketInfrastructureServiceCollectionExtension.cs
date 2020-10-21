@@ -13,7 +13,7 @@ namespace Basket.Infrastructure
     {
         /// <summary>
         /// https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/
-        /// all proxies must contains resilience concepts
+        /// all proxies must contains resilience concepts for example Identity service
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
@@ -29,7 +29,7 @@ namespace Basket.Infrastructure
             services.AddScoped<IBasketQueryRepository, BasketQueryRepository>();
             services.AddScoped<IBasketCommandRepository, BasketCommandRepository>();
         }
-        
+
         private static void AddRedisCache(this IServiceCollection services)
         {
             using (var scope = services.BuildServiceProvider().CreateScope())

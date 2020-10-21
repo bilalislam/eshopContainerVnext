@@ -55,7 +55,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
         public void ConfigureServices(IServiceCollection services)
         {
             //TODO : must be generic register
-            services.AddScoped<IUpdateBasketAssembler, UpdateBasketAssembler>();
+            services.AddScoped<IBasketAssembler, BasketAssembler>();
             services.AddMediatR(Assembly.Load("Basket.Application"));
             services.AddBasketApplicationComponents();
 

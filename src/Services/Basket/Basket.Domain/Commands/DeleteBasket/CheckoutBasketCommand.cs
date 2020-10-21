@@ -1,8 +1,9 @@
-﻿using System;
+using System;
+using MediatR;
 
-namespace Basket.API.Model
+namespace Basket.Domain.Commands.DeleteBasket
 {
-    public class BasketCheckout
+    public class CheckoutBasketCommand : IRequest<CheckoutBasketCommandResult>
     {
         public string City { get; set; }
 
@@ -25,8 +26,8 @@ namespace Basket.API.Model
         public int CardTypeId { get; set; }
 
         public string Buyer { get; set; }
-
         public string BuyerId { get; set; }
+
         public Guid RequestId { get; set; }
     }
 }

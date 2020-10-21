@@ -22,11 +22,16 @@ namespace Basket.Infrastructure.Repositories
             _database = redis.GetDatabase();
         }
 
-        public Task SaveAsync(Domain.Aggregates.Basket basket, CancellationToken cancellationToken)
+        public async Task SaveAsync(Domain.Aggregates.Basket basket, CancellationToken cancellationToken)
         {
-            var result = _database.StringSetAsync(basket.BuyerId, JsonConvert.SerializeObject(basket));
             _logger.LogInformation($"basket with {basket.BuyerId} saved");
-            return result;
+            await _database.StringSetAsync(basket.BuyerId, JsonConvert.SerializeObject(basket));
+        }
+
+        public async Task DeleteAsync(string buyerId, CancellationToken cancellationToken)
+        {
+            _logger.LogInformation($"basket with {buyerId} deleted");
+            await _database.KeyDeleteAsync(buyerId);
         }
     }
 }

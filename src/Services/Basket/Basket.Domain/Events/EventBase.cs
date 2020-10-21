@@ -14,8 +14,8 @@ namespace Basket.Domain.Events
 
     public abstract class EventBase : IEvent
     {
-        public Guid Id { get; protected set; } = Guid.NewGuid();
-        public int EventVersion { get; protected set; } = 1;
-        public DateTime OccurredOn { get; protected set; } = DateTimeOffset.Now.UtcDateTime;
+        public Guid Id { get; private set; } = Guid.NewGuid();
+        public int EventVersion { get; private set; } = 1;
+        public DateTime OccurredOn { get; private set; } = DateTimeOffset.Now.UtcDateTime;
     }
 }
