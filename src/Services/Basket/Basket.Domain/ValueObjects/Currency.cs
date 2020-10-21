@@ -9,7 +9,8 @@ namespace Basket.Domain.ValueObjects
     [ExcludeFromCodeCoverage]
     public class Currency : ValueObjectBase
     {
-        private Currency(string name, int code)
+        //Impedance Mismathc :(
+        public Currency(string name, int code)
         {
             Name = name;
             Code = code;

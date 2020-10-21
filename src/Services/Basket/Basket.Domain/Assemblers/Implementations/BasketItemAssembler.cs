@@ -17,6 +17,7 @@ namespace Basket.Domain.Assemblers.Implementations
         {
             return new BasketItemContract()
             {
+                Id = basketItem.Id,
                 ProductId = basketItem.ProductId,
                 Quantity = basketItem.Quantity,
                 PictureUrl = basketItem.PictureUrl,

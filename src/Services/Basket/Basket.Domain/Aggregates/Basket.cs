@@ -1,30 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using Basket.Domain.Commands.GetBasketById;
+using System.ComponentModel;
+using Basket.Domain.Commands.UpdateBasket;
+using Basket.Domain.Contracts;
 using Basket.Domain.Entities;
 using Basket.Domain.ErrorCodes;
+using Basket.Domain.Events;
 using Basket.Domain.Exceptions;
 using Basket.Domain.Shared;
 
 namespace Basket.Domain.Aggregates
 {
+    /// <summary>
+    /// All normal basket case which can be in real life will include next time step by step ...
+    /// https://github.com/vietnam-devs/coolstore-microservices/blob/develop/src/microservices/shopping-cart-service/VND.CoolStore.ShoppingCart/Domain/Cart/Cart.cs
+    /// </summary>
     public class Basket : AggregateRootBase<Guid>
     {
         public string BuyerId { get; private set; }
 
         public List<BasketItem> Items { get; private set; }
 
-        public static Basket Load(GetBasketByIdCommand getBasketByIdCommand)
+        //Impedance Mismatch :(
+        public Basket(string buyerId, List<BasketItem> items = null) : base(Guid.NewGuid())
         {
-            Guard.That<DomainException>(string.IsNullOrEmpty(getBasketByIdCommand.Id),
-                nameof(DomainErrorCodes.EDBasket1001), DomainErrorCodes.EDBasket1001);
+            BuyerId = buyerId;
+            Items = items;
+            AddEvent(new BasketCreated(buyerId));
+        }
 
-            var basket = new Basket()
+
+        public static Basket Load(UpdateBasketCommand updateBasketCommand)
+        {
+            Guard.That<DomainException>(string.IsNullOrEmpty(updateBasketCommand.BuyerId),
+                nameof(DomainErrorCodes.EDBasket1001), DomainErrorCodes.EDBasket1001);
+            return new Basket(updateBasketCommand.BuyerId);
+        }
+
+        public Basket AddCartItem(IEnumerable<BasketItemContract> basketItemContracts)
+        {
+            Items ??= new List<BasketItem>();
+
+            foreach (var itemContract in basketItemContracts)
             {
-                BuyerId = getBasketByIdCommand.Id,
-                Items = new List<BasketItem>()
-            };
-            return basket;
+                var basketItem = BasketItem.Load(itemContract);
+                Items.Add(basketItem);
+                AddEvent(new BasketItemAdded(BuyerId, basketItem));
+            }
+
+            return this;
         }
     }
 }

@@ -10,7 +10,8 @@ namespace Basket.Domain.ValueObjects
     [ExcludeFromCodeCoverage]
     public class Money : ValueObjectBase
     {
-        private Money(decimal amount, Currency currency)
+        //Impedance Mismatch :(
+        public Money(decimal amount, Currency currency)
         {
             Amount = decimal.Round(amount, 2);
             Currency = currency;

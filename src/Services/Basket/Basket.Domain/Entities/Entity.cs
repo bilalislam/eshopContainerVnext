@@ -9,17 +9,21 @@ namespace Basket.Domain.Entities
     /// </summary>
     public abstract class EntityBase<TId> : IIdentity<TId>
     {
+        protected EntityBase()
+        {
+        }
+
         protected EntityBase(TId id)
         {
             Id = id;
             Created = DateTimeOffset.Now.UtcDateTime;
         }
 
-        public DateTime Created { get; protected set; }
+        public DateTime Created { get; private set; }
 
-        public DateTime? Updated { get; protected set; }
-
-        [Key] 
-        public TId Id { get; protected set; }
+        public DateTime? Updated { get; private set; }
+        
+        // It must be public because of not moved from derived class. impedance mismatch :(
+        [Key] public TId Id { get; set; }
     }
 }

@@ -10,7 +10,6 @@
 
     <ItemGroup>
         <Folder Include="UseCases\CheckoutBasket" />
-        <Folder Include="UseCases\UpdateBasket" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,6 +1,4 @@
-﻿using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using Basket.API.Infrastructure.Filters;
+﻿using Basket.API.Infrastructure.Filters;
 using Basket.API.Infrastructure.Middlewares;
 using Basket.API.IntegrationEvents.EventHandling;
 using Basket.API.IntegrationEvents.Events;
@@ -14,7 +12,6 @@ using Microsoft.Azure.ServiceBus;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBus;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Abstractions;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ;
-using Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus;
 using Microsoft.eShopOnContainers.Services.Basket.API.Controllers;
 using Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories;
 using Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.EventHandling;
@@ -33,9 +30,13 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
+using System.Reflection;
+using Basket.API.Assemblers.Implementations;
+using Basket.API.Assemblers.Interfaces;
 using Basket.API.Controllers;
 using Basket.Application;
 using GrpcBasket;
+using MediatR;
 using Microsoft.AspNetCore.Http.Features;
 using Serilog;
 
@@ -51,8 +52,13 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public virtual IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
+            //TODO : must be generic register
+            services.AddScoped<IUpdateBasketAssembler, UpdateBasketAssembler>();
+            services.AddMediatR(Assembly.Load("Basket.Application"));
+            services.AddBasketApplicationComponents();
+
             services.AddGrpc(options => { options.EnableDetailedErrors = true; });
 
             services.AddControllers(options =>
@@ -98,24 +104,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
 
             services.AddCustomHealthCheck(Configuration);
 
-            services.Configure<BasketSettings>(Configuration);
-
-            //By connecting here we are making sure that our service
-            //cannot start until redis is ready. This might slow down startup,
-            //but given that there is a delay on resolving the ip address
-            //and then creating the connection it seems reasonable to move
-            //that cost to startup instead of having the first request pay the
-            //penalty.
-            services.AddSingleton<ConnectionMultiplexer>(sp =>
-            {
-                var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
-                var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
-
-                configuration.ResolveDns = true;
-
-                return ConnectionMultiplexer.Connect(configuration);
-            });
-
+            //services.Configure<BasketSettings>(Configuration);
 
             services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
             {
@@ -147,7 +136,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             });
 
 
-            RegisterEventBus(services);
+            //RegisterEventBus(services);
 
 
             services.AddCors(options =>
@@ -164,11 +153,6 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddTransient<IIdentityService, IdentityService>();
 
             services.AddOptions();
-
-            var container = new ContainerBuilder();
-            container.Populate(services);
-
-            return new AutofacServiceProvider(container.Build());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -230,7 +214,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
                 });
             });
 
-            ConfigureEventBus(app);
+            //sConfigureEventBus(app);
         }
 
         private void RegisterAppInsights(IServiceCollection services)
@@ -269,31 +253,31 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             app.UseAuthorization();
         }
 
-        private void RegisterEventBus(IServiceCollection services)
-        {
-            var subscriptionClientName = Configuration["SubscriptionClientName"];
-            services.AddSingleton<IEventBus, EventBusRabbitMQ>(sp =>
-            {
-                var rabbitMQPersistentConnection = sp.GetRequiredService<IRabbitMQPersistentConnection>();
-                var iLifetimeScope = sp.GetRequiredService<ILifetimeScope>();
-                var logger = sp.GetRequiredService<ILogger<EventBusRabbitMQ>>();
-                var eventBusSubcriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
-
-                var retryCount = 5;
-                if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
-                {
-                    retryCount = int.Parse(Configuration["EventBusRetryCount"]);
-                }
-
-                return new EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope,
-                    eventBusSubcriptionsManager, subscriptionClientName, retryCount);
-            });
-
-            services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
-
-            services.AddTransient<ProductPriceChangedIntegrationEventHandler>();
-            services.AddTransient<OrderStartedIntegrationEventHandler>();
-        }
+        // private void RegisterEventBus(IServiceCollection services)
+        // {
+        //     var subscriptionClientName = Configuration["SubscriptionClientName"];
+        //     services.AddSingleton<IEventBus, EventBusRabbitMQ>(sp =>
+        //     {
+        //         var rabbitMQPersistentConnection = sp.GetRequiredService<IRabbitMQPersistentConnection>();
+        //         var iLifetimeScope = sp.GetRequiredService<ILifetimeScope>();
+        //         var logger = sp.GetRequiredService<ILogger<EventBusRabbitMQ>>();
+        //         var eventBusSubcriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
+        //
+        //         var retryCount = 5;
+        //         if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
+        //         {
+        //             retryCount = int.Parse(Configuration["EventBusRetryCount"]);
+        //         }
+        //
+        //         return new EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope,
+        //             eventBusSubcriptionsManager, subscriptionClientName, retryCount);
+        //     });
+        //
+        //     services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
+        //
+        //     services.AddTransient<ProductPriceChangedIntegrationEventHandler>();
+        //     services.AddTransient<OrderStartedIntegrationEventHandler>();
+        // }
 
         private void ConfigureEventBus(IApplicationBuilder app)
         {

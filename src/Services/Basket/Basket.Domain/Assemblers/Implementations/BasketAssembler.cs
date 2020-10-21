@@ -16,8 +16,9 @@ namespace Basket.Domain.Assemblers.Implementations
         {
             return new Contracts.BasketContract()
             {
+                Id = basket.Id,
                 BuyerId = basket.BuyerId,
-                BasketItems = basket.Items.Select(x => _basketItemAssembler.ToContract(x))
+                BasketItems = basket.Items?.Select(x => _basketItemAssembler.ToContract(x))
             };
         }
     }

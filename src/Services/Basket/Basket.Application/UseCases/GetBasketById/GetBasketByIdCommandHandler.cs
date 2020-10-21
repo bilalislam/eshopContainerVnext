@@ -1,9 +1,7 @@
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Domain.Assemblers.Interfaces;
 using Basket.Domain.Commands.GetBasketById;
-using Basket.Domain.Entities;
 using Basket.Domain.RepositoryInterfaces;
 using MediatR;
 
@@ -24,7 +22,11 @@ namespace Basket.Application.UseCases.GetBasketById
         public async Task<GetBasketIdCommandResult> Handle(GetBasketByIdCommand request,
             CancellationToken cancellationToken)
         {
-            var basket = await _basketQueryRepository.GetBasketAsync(request.Id);
+            var basket = await _basketQueryRepository.GetBasketAsync(request.Id, cancellationToken);
+
+            if (basket == null)
+                return new GetBasketIdCommandResult();
+
             return new GetBasketIdCommandResult()
             {
                 BasketContract = _basketAssembler.ToContract(basket)

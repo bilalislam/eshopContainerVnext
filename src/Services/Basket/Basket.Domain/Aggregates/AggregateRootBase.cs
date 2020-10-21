@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Basket.Domain.Entities;
@@ -16,7 +14,6 @@ namespace Basket.Domain.Aggregates
     [ExcludeFromCodeCoverage]
     public abstract class AggregateRootBase<TId> : EntityBase<TId>, IAggregateRootWithId<TId>
     {
-        private readonly IDictionary<Type, Action<object>> _handlers = new ConcurrentDictionary<Type, Action<object>>();
         private List<IEvent> _uncommittedEvents = new List<IEvent>();
 
         protected AggregateRootBase() : this(default)

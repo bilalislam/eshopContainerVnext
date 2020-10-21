@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Basket.Domain.Contracts
@@ -5,6 +6,7 @@ namespace Basket.Domain.Contracts
     [ExcludeFromCodeCoverage]
     public class BasketItemContract
     {
+        public Guid Id { get; set; }
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public MoneyContract UnitPrice { get; set; }
