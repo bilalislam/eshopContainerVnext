@@ -2,6 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Basket.Application.IntegrationEvents.Events;
 using Basket.Domain.Assemblers.Interfaces;
+using Basket.Domain.Commands.CheckoutBasket;
 using Basket.Domain.Commands.DeleteBasket;
 using Basket.Domain.RepositoryInterfaces;
 using Basket.Infrastructure.Bus;

@@ -1,7 +1,8 @@
 using System;
+using Basket.Domain.Commands.DeleteBasket;
 using MediatR;
 
-namespace Basket.Domain.Commands.DeleteBasket
+namespace Basket.Domain.Commands.CheckoutBasket
 {
     public class CheckoutBasketCommand : IRequest<CheckoutBasketCommandResult>
     {

@@ -25,14 +25,12 @@ namespace Basket.API.Controllers
     public class BasketController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<BasketController> _logger;
         private readonly IBasketAssembler _basketAssembler;
 
         public BasketController(
-            ILogger<BasketController> logger,
-            IMediator mediator, IBasketAssembler basketAssembler)
+            IMediator mediator,
+            IBasketAssembler basketAssembler)
         {
-            _logger = logger;
             _mediator = mediator;
             _basketAssembler = basketAssembler;
         }
@@ -69,55 +67,6 @@ namespace Basket.API.Controllers
             }, cancellationToken);
             return NoContent();
         }
-
-        // [Route("checkout")]
-        // [HttpPost]
-        // [ProducesResponseType((int) HttpStatusCode.Accepted)]
-        // [ProducesResponseType((int) HttpStatusCode.BadRequest)]
-        // public async Task<ActionResult> CheckoutAsync([FromBody] BasketCheckout basketCheckout,
-        //     [FromHeader(Name = "x-requestid")] string requestId)
-        // {
-        //     //var userId = _identityService.GetUserIdentity();
-        //     
-        //     basketCheckout.RequestId = (Guid.TryParse(requestId, out Guid guid) && guid != Guid.Empty)
-        //         ? guid
-        //         : basketCheckout.RequestId;
-        //     
-        //     //var basket = await _repository.GetBasketAsync(userId);
-        //     
-        //     // if (basket == null)
-        //     // {
-        //     //     return BadRequest();
-        //     // }
-        //     
-        //     //var userName = this.HttpContext.User.FindFirst(x => x.Type == ClaimTypes.Name).Value;
-        //
-        //     _mediator.Send(_basketAssembler);
-        //     
-        //     var eventMessage = new UserCheckoutAcceptedIntegrationEvent(userId, userName, basketCheckout.City,
-        //         basketCheckout.Street,
-        //         basketCheckout.State, basketCheckout.Country, basketCheckout.ZipCode, basketCheckout.CardNumber,
-        //         basketCheckout.CardHolderName,
-        //         basketCheckout.CardExpiration, basketCheckout.CardSecurityNumber, basketCheckout.CardTypeId,
-        //         basketCheckout.Buyer, basketCheckout.RequestId, basket);
-        //     
-        //     // Once basket is checkout, sends an integration event to
-        //     // ordering.api to convert basket to order and proceeds with
-        //     // order creation process
-        //     try
-        //     {
-        //         //_eventBus.Publish(eventMessage);
-        //     }
-        //     catch (Exception ex)
-        //     {
-        //         _logger.LogError(ex, "ERROR Publishing integration event: {IntegrationEventId} from {AppName}",
-        //             eventMessage.Id, Program.AppName);
-        //     
-        //         throw;
-        //     }
-        //
-        //     return Accepted();
-        // }
 
         [Route("checkout")]
         [HttpPost]

@@ -1,4 +1,4 @@
-namespace Basket.Domain.Commands.DeleteBasket
+namespace Basket.Domain.Commands.CheckoutBasket
 {
     public class CheckoutBasketCommandResult
     {
