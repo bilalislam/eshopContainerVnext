@@ -1,9 +1,13 @@
 using System.Diagnostics.CodeAnalysis;
 using Basket.Domain.RepositoryInterfaces;
+using Basket.Infrastructure.Bus;
+using Basket.Infrastructure.Bus.RabbitMq;
 using Basket.Infrastructure.Repositories;
 using Basket.Infrastructure.Repositories.Redis;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.ObjectPool;
+using RabbitMQ.Client;
 using StackExchange.Redis;
 
 namespace Basket.Infrastructure
@@ -21,6 +25,7 @@ namespace Basket.Infrastructure
         {
             services.AddRepositories();
             services.AddRedisCache();
+            services.AddRabbitMq();
             return services;
         }
 
@@ -43,6 +48,12 @@ namespace Basket.Infrastructure
                     return ConnectionMultiplexer.Connect(configuration);
                 });
             }
+        }
+
+        private static void AddRabbitMq(this IServiceCollection services)
+        {
+            services.AddScoped<IEventBus, EventBusRabbitMq>();
+            services.AddSingleton<IPooledObjectPolicy<IConnection>, ConnectionPooledObjectPolicy>();
         }
     }
 }

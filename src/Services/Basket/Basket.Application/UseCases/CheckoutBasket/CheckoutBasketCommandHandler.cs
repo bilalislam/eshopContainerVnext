@@ -1,10 +1,10 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Application.IntegrationEvents.Events;
 using Basket.Domain.Assemblers.Interfaces;
 using Basket.Domain.Commands.DeleteBasket;
 using Basket.Domain.RepositoryInterfaces;
+using Basket.Infrastructure.Bus;
 using MediatR;
 
 namespace Basket.Application.UseCases.CheckoutBasket
@@ -13,19 +13,21 @@ namespace Basket.Application.UseCases.CheckoutBasket
     {
         private readonly IBasketQueryRepository _basketQueryRepository;
         private readonly IBasketAssembler _basketAssembler;
+        private readonly IEventBus _eventBus;
 
         public CheckoutBasketCommandHandler(IBasketQueryRepository basketQueryRepository,
-            IBasketAssembler basketAssembler)
+            IBasketAssembler basketAssembler, IEventBus eventBus)
         {
             _basketQueryRepository = basketQueryRepository;
             _basketAssembler = basketAssembler;
+            _eventBus = eventBus;
         }
 
         /// <summary>
         /// Once basket is checkout, sends an integration event to
         /// ordering.api to convert basket to order and proceeds with
         /// order creation process
-        /// Customer  Shipping and Payment Information
+        /// The Shipping and Payment Information  Of Customer
         /// </summary>
         /// <param name="request"></param>
         /// <param name="cancellationToken"></param>
@@ -38,7 +40,7 @@ namespace Basket.Application.UseCases.CheckoutBasket
             if (basket == null)
                 return null;
 
-            var eventMessage = new UserCheckoutAcceptedIntegrationEvent(
+            var userCheckoutAcceptedIntegrationEvent = new UserCheckoutAcceptedIntegrationEvent(
                 request.BuyerId,
                 request.Buyer,
                 request.City,
@@ -56,6 +58,8 @@ namespace Basket.Application.UseCases.CheckoutBasket
                 _basketAssembler.ToContract(basket));
 
 
+            await _eventBus.PublishMessageAsync(userCheckoutAcceptedIntegrationEvent, "eshopContainers", "topic",
+                nameof(userCheckoutAcceptedIntegrationEvent));
             return new CheckoutBasketCommandResult();
         }
     }
