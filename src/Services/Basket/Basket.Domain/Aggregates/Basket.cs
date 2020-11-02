@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using Basket.Domain.Entities;
@@ -32,15 +33,22 @@ namespace Basket.Domain.Aggregates
 
         public static Basket Load(UpdateBasketCommand updateBasketCommand)
         {
+            Guard.That<DomainException>(updateBasketCommand == null,
+                nameof(DomainErrorCodes.EDBasket1000), DomainErrorCodes.EDBasket1000);
+
             Guard.That<DomainException>(string.IsNullOrEmpty(updateBasketCommand.BuyerId),
                 nameof(DomainErrorCodes.EDBasket1001), DomainErrorCodes.EDBasket1001);
+
             return new Basket(updateBasketCommand.BuyerId);
         }
 
         public Basket AddCartItem(IEnumerable<BasketItemContract> basketItemContracts)
         {
-            Items ??= new List<BasketItem>();
+            Guard.That<DomainException>(basketItemContracts == null || !basketItemContracts.Any(),
+                nameof(DomainErrorCodes.EDBasket1008),
+                DomainErrorCodes.EDBasket1008);
 
+            Items = new List<BasketItem>();
             foreach (var itemContract in basketItemContracts)
             {
                 var basketItem = BasketItem.Load(itemContract);

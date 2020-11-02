@@ -1,0 +1,337 @@
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Events/EventBase.cs
+FN:16,System.Guid Basket.Domain.Events.EventBase::get_Id()
+FNDA:0,System.Guid Basket.Domain.Events.EventBase::get_Id()
+DA:17,0
+FN:17,System.Int32 Basket.Domain.Events.EventBase::get_EventVersion()
+FNDA:0,System.Int32 Basket.Domain.Events.EventBase::get_EventVersion()
+DA:18,0
+FN:18,System.DateTime Basket.Domain.Events.EventBase::get_OccurredOn()
+FNDA:0,System.DateTime Basket.Domain.Events.EventBase::get_OccurredOn()
+DA:19,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Entities/BasketItem.cs
+FN:14,System.Int32 Basket.Domain.Entities.BasketItem::get_ProductId()
+FNDA:0,System.Int32 Basket.Domain.Entities.BasketItem::get_ProductId()
+DA:15,0
+FN:15,System.String Basket.Domain.Entities.BasketItem::get_ProductName()
+FNDA:0,System.String Basket.Domain.Entities.BasketItem::get_ProductName()
+DA:16,0
+FN:16,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_UnitPrice()
+FNDA:0,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_UnitPrice()
+DA:17,0
+FN:17,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_OldUnitPrice()
+FNDA:0,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_OldUnitPrice()
+DA:18,0
+FN:18,System.Int32 Basket.Domain.Entities.BasketItem::get_Quantity()
+FNDA:0,System.Int32 Basket.Domain.Entities.BasketItem::get_Quantity()
+DA:19,0
+FN:19,System.String Basket.Domain.Entities.BasketItem::get_PictureUrl()
+FNDA:0,System.String Basket.Domain.Entities.BasketItem::get_PictureUrl()
+DA:20,0
+FN:34,Basket.Domain.Entities.BasketItem Basket.Domain.Entities.BasketItem::Load(Basket.Domain.Contracts.BasketItemContract)
+FNDA:0,Basket.Domain.Entities.BasketItem Basket.Domain.Entities.BasketItem::Load(Basket.Domain.Contracts.BasketItemContract)
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+FN:23,System.Void Basket.Domain.Entities.BasketItem::.ctor(System.Int32,System.String,Basket.Domain.ValueObjects.Money,Basket.Domain.ValueObjects.Money,System.Int32,System.String)
+FNDA:0,System.Void Basket.Domain.Entities.BasketItem::.ctor(System.Int32,System.String,Basket.Domain.ValueObjects.Money,Basket.Domain.ValueObjects.Money,System.Int32,System.String)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+LF:34
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Entities/Entity.cs
+FN:21,System.DateTime Basket.Domain.Entities.EntityBase`1::get_Created()
+FNDA:0,System.DateTime Basket.Domain.Entities.EntityBase`1::get_Created()
+DA:22,0
+FN:23,System.Nullable`1<System.DateTime> Basket.Domain.Entities.EntityBase`1::get_Updated()
+FNDA:0,System.Nullable`1<System.DateTime> Basket.Domain.Entities.EntityBase`1::get_Updated()
+DA:24,0
+FN:26,TId Basket.Domain.Entities.EntityBase`1::get_Id()
+FNDA:0,TId Basket.Domain.Entities.EntityBase`1::get_Id()
+DA:27,0
+FN:11,System.Void Basket.Domain.Entities.EntityBase`1::.ctor()
+FNDA:0,System.Void Basket.Domain.Entities.EntityBase`1::.ctor()
+DA:12,0
+DA:13,0
+DA:14,0
+FN:15,System.Void Basket.Domain.Entities.EntityBase`1::.ctor(TId)
+FNDA:0,System.Void Basket.Domain.Entities.EntityBase`1::.ctor(TId)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/UpdateBasket/UpdateBasketCommand.cs
+FN:8,System.String Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand::get_BuyerId()
+FNDA:1,System.String Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand::get_BuyerId()
+DA:9,1
+FN:9,System.Collections.Generic.List`1<Basket.Domain.Contracts.BasketItemContract> Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand::get_Items()
+FNDA:0,System.Collections.Generic.List`1<Basket.Domain.Contracts.BasketItemContract> Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand::get_Items()
+DA:10,0
+LF:2
+LH:1
+BRF:0
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/UpdateBasket/UpdateBasketCommandResult.cs
+FN:6,Basket.Domain.Contracts.BasketContract Basket.Domain.Commands.UpdateBasket.UpdateBasketCommandResult::get_Basket()
+FNDA:0,Basket.Domain.Contracts.BasketContract Basket.Domain.Commands.UpdateBasket.UpdateBasketCommandResult::get_Basket()
+DA:7,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/GetBasketById/GetBasketByIdCommand.cs
+FN:9,System.String Basket.Domain.Commands.GetBasketById.GetBasketByIdCommand::get_Id()
+FNDA:0,System.String Basket.Domain.Commands.GetBasketById.GetBasketByIdCommand::get_Id()
+DA:10,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/GetBasketById/GetBasketIdCommandResult.cs
+FN:6,Basket.Domain.Contracts.BasketContract Basket.Domain.Commands.GetBasketById.GetBasketIdCommandResult::get_BasketContract()
+FNDA:0,Basket.Domain.Contracts.BasketContract Basket.Domain.Commands.GetBasketById.GetBasketIdCommandResult::get_BasketContract()
+DA:7,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/DeleteBasket/DeleteBasketCommand.cs
+FN:6,System.String Basket.Domain.Commands.DeleteBasket.DeleteBasketCommand::get_BuyerId()
+FNDA:0,System.String Basket.Domain.Commands.DeleteBasket.DeleteBasketCommand::get_BuyerId()
+DA:7,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/CheckoutBasket/CheckoutBasketCommand.cs
+FN:8,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_City()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_City()
+DA:9,0
+FN:10,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Street()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Street()
+DA:11,0
+FN:12,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_State()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_State()
+DA:13,0
+FN:14,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Country()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Country()
+DA:15,0
+FN:16,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_ZipCode()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_ZipCode()
+DA:17,0
+FN:18,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardNumber()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardNumber()
+DA:19,0
+FN:20,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardHolderName()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardHolderName()
+DA:21,0
+FN:22,System.DateTime Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardExpiration()
+FNDA:0,System.DateTime Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardExpiration()
+DA:23,0
+FN:24,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardSecurityNumber()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardSecurityNumber()
+DA:25,0
+FN:26,System.Int32 Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardTypeId()
+FNDA:0,System.Int32 Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_CardTypeId()
+DA:27,0
+FN:28,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Buyer()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_Buyer()
+DA:29,0
+FN:29,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_BuyerId()
+FNDA:0,System.String Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_BuyerId()
+DA:30,0
+FN:31,System.Guid Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_RequestId()
+FNDA:0,System.Guid Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand::get_RequestId()
+DA:32,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:13
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/CheckoutBasket/CheckoutBasketCommandResult.cs
+FN:4,System.Boolean Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommandResult::get_Success()
+FNDA:0,System.Boolean Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommandResult::get_Success()
+DA:5,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Assemblers/Implementations/BasketAssembler.cs
+FN:15,Basket.Domain.Contracts.BasketContract Basket.Domain.Assemblers.Implementations.BasketAssembler::ToContract(Basket.Domain.Aggregates.Basket)
+FNDA:0,Basket.Domain.Contracts.BasketContract Basket.Domain.Assemblers.Implementations.BasketAssembler::ToContract(Basket.Domain.Aggregates.Basket)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+BRDA:17,40,0,0
+BRDA:17,40,1,0
+FN:9,System.Void Basket.Domain.Assemblers.Implementations.BasketAssembler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketItemAssembler)
+FNDA:0,System.Void Basket.Domain.Assemblers.Implementations.BasketAssembler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketItemAssembler)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+LF:12
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Assemblers/Implementations/BasketItemAssembler.cs
+FN:16,Basket.Domain.Contracts.BasketItemContract Basket.Domain.Assemblers.Implementations.BasketItemAssembler::ToContract(Basket.Domain.Entities.BasketItem)
+FNDA:0,Basket.Domain.Contracts.BasketItemContract Basket.Domain.Assemblers.Implementations.BasketItemAssembler::ToContract(Basket.Domain.Entities.BasketItem)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+FN:10,System.Void Basket.Domain.Assemblers.Implementations.BasketItemAssembler::.ctor(Basket.Domain.Assemblers.Interfaces.IMoneyAssembler)
+FNDA:0,System.Void Basket.Domain.Assemblers.Implementations.BasketItemAssembler::.ctor(Basket.Domain.Assemblers.Interfaces.IMoneyAssembler)
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+LF:16
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Assemblers/Implementations/MoneyAssembler.cs
+FN:9,Basket.Domain.Contracts.MoneyContract Basket.Domain.Assemblers.Implementations.MoneyAssembler::ToContract(Basket.Domain.ValueObjects.Money)
+FNDA:0,Basket.Domain.Contracts.MoneyContract Basket.Domain.Assemblers.Implementations.MoneyAssembler::ToContract(Basket.Domain.ValueObjects.Money)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Aggregates/Basket.cs
+FN:19,System.String Basket.Domain.Aggregates.Basket::get_BuyerId()
+FNDA:0,System.String Basket.Domain.Aggregates.Basket::get_BuyerId()
+DA:20,0
+FN:21,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem> Basket.Domain.Aggregates.Basket::get_Items()
+FNDA:0,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem> Basket.Domain.Aggregates.Basket::get_Items()
+DA:22,0
+FN:33,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::Load(Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand)
+FNDA:2,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::Load(Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand)
+DA:34,2
+DA:35,2
+DA:36,2
+DA:38,1
+DA:39,1
+DA:40,0
+DA:41,0
+FN:43,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::AddCartItem(System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.BasketItemContract>)
+FNDA:0,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::AddCartItem(System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.BasketItemContract>)
+DA:44,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+BRDA:45,7,0,0
+BRDA:45,7,1,0
+BRDA:47,87,1,0
+BRDA:47,87,0,0
+FN:24,System.Void Basket.Domain.Aggregates.Basket::.ctor(System.String,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem>)
+FNDA:0,System.Void Basket.Domain.Aggregates.Basket::.ctor(System.String,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem>)
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+LF:25
+LH:5
+BRF:4
+BRH:0
+FNF:5
+FNH:1
+end_of_record

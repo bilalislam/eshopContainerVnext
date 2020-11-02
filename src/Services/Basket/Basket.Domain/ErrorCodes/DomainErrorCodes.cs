@@ -5,6 +5,7 @@ namespace Basket.Domain.ErrorCodes
     [ExcludeFromCodeCoverage]
     public static class DomainErrorCodes
     {
+        public const string EDBasket1000 = "BasketDomainDtoShouldNotBeNull";
         public const string EDBasket1001 = "BasketCustomerIdCouldNotBeNull";
         public const string EDBasket1002 = "CurrencyNameCouldNotBeEmpty";
         public const string EDBasket1003 = "CurrencyCodeShoulNotBeEqualAndLessThenZero";
