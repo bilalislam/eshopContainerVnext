@@ -22,7 +22,12 @@ namespace Basket.Domain.Aggregates
 
         public List<BasketItem> Items { get; private set; }
 
-        //Impedance Mismatch :(
+
+        /// <summary>
+        /// Business Invariant is just a buyer but items are defining that's why impedance mismatch ! 
+        /// </summary>
+        /// <param name="buyerId"></param>
+        /// <param name="items"></param>
         public Basket(string buyerId, List<BasketItem> items = null) : base(Guid.NewGuid())
         {
             BuyerId = buyerId;
@@ -31,6 +36,11 @@ namespace Basket.Domain.Aggregates
         }
 
 
+        /// <summary>
+        /// Domain Validation : https://medium.com/@cem.basaranoglu/we-dont-need-no-command-validation-1226c40c3df8
+        /// </summary>
+        /// <param name="updateBasketCommand"></param>
+        /// <returns></returns>
         public static Basket Load(UpdateBasketCommand updateBasketCommand)
         {
             Guard.That<DomainException>(updateBasketCommand == null,

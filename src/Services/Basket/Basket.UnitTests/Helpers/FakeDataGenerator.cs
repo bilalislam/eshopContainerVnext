@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using Bogus;
@@ -8,31 +7,50 @@ namespace Basket.UnitTests.Helpers
 {
     public static class FakeDataGenerator
     {
-        private static readonly Faker faker = new Faker();
+        private static readonly Faker Faker = new Faker();
 
         public static UpdateBasketCommand GetBasketCommand()
         {
             return new UpdateBasketCommand()
             {
-                BuyerId = faker.Random.String(),
-                Items = faker.Random.ListItems(new List<BasketItemContract>()
+                BuyerId = Faker.Random.String(),
+                Items = new List<BasketItemContract>()
                 {
                     new BasketItemContract()
                     {
                         Quantity = 1,
-                        PictureUrl = faker.Random.String(),
-                        ProductId = faker.Random.Int(),
-                        ProductName = faker.Random.String(),
+                        PictureUrl = Faker.Random.String(),
+                        ProductId = Faker.Random.Int(),
+                        ProductName = Faker.Random.String(),
                         UnitPrice = new MoneyContract()
                         {
-                            Amount = faker.Random.Decimal()
+                            Amount = Faker.Random.Decimal()
                         },
                         OldUnitPrice = new MoneyContract()
                         {
-                            Amount = faker.Random.Decimal()
+                            Amount = Faker.Random.Decimal()
                         },
                     }
-                }).ToList()
+                }
+            };
+        }
+
+        public static BasketItemContract GetBasketItem()
+        {
+            return new BasketItemContract()
+            {
+                Quantity = 1,
+                PictureUrl = Faker.Random.String(),
+                ProductId = Faker.Random.Int(1),
+                ProductName = Faker.Random.String(),
+                UnitPrice = new MoneyContract()
+                {
+                    Amount = Faker.Random.Decimal(1)
+                },
+                OldUnitPrice = new MoneyContract()
+                {
+                    Amount = Faker.Random.Decimal(1)
+                },
             };
         }
     }

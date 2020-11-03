@@ -1,6 +1,10 @@
 using System;
-using Basket.Domain.Commands.UpdateBasket;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using Basket.Domain.Contracts;
 using Basket.Domain.ErrorCodes;
+using Basket.Domain.Events;
 using Basket.Domain.Exceptions;
 using Basket.UnitTests.Helpers;
 using FluentAssertions;
@@ -34,7 +38,20 @@ namespace Basket.UnitTests.Aggregates
         }
 
         [Test]
-        public void Load_ShouldThrowException_WhenBasketItemsNullOrEmpty()
+        public void Load_ShouldCreateBasket_WhenBasketDoesValid()
+        {
+            //Arrange
+            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+
+            // Act
+            var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
+
+            // Assert
+            basket.GetUncommittedEvents().First().Should().BeOfType<BasketCreated>();
+        }
+
+        [Test]
+        public void AddCartItem_ShouldThrowException_WhenBasketItemsNullOrEmpty()
         {
             //Arrange
             var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
@@ -49,6 +66,24 @@ namespace Basket.UnitTests.Aggregates
 
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1008));
+        }
+
+        [Test]
+        public void AddCartItem_ShouldAddProductsToBasket_WhenBasketItemsAreValid()
+        {
+            //Arrange
+            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+
+            // Act
+            var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
+
+            basket.AddCartItem(new List<BasketItemContract>()
+            {
+                FakeDataGenerator.GetBasketItem()
+            });
+
+            // Assert
+            basket.Items.Should().HaveCount(1);
         }
     }
 }

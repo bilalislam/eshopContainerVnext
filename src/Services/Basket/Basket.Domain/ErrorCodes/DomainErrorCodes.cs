@@ -14,5 +14,6 @@ namespace Basket.Domain.ErrorCodes
         public const string EDBasket1006 = "QuantityCouldNotBeEqualAndLessThenZero";
         public const string EDBasket1007 = "PictureUrlCouldNotBeEmpty";
         public const string EDBasket1008 = "ProductItemsCouldNotBeNull";
+        public const string EDBasket1009 = "ProductIdCouldNotBeLessThenZero";
     }
 }
