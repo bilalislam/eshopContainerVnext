@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Net;
-using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.API.Assemblers.Interfaces;
-using Basket.API.IntegrationEvents.Events;
 using Basket.API.Model;
 using Basket.Domain.Commands.DeleteBasket;
 using Basket.Domain.Commands.GetBasketById;
@@ -12,16 +10,14 @@ using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.eShopOnContainers.Services.Basket.API;
 using Microsoft.eShopOnContainers.Services.Basket.API.Model;
-using Microsoft.eShopOnContainers.Services.Basket.API.Services;
-using Microsoft.Extensions.Logging;
 
 namespace Basket.API.Controllers
 {
+    [ApiController]
+    [ApiVersion("1.0")]
     [Route("api/v1/[controller]")]
     // [Authorize]
-    [ApiController]
     public class BasketController : ControllerBase
     {
         private readonly IMediator _mediator;

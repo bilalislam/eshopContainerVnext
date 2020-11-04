@@ -9,7 +9,7 @@ namespace Basket.UnitTests.Helpers
     {
         private static readonly Faker Faker = new Faker();
 
-        public static UpdateBasketCommand GetBasketCommand()
+        public static UpdateBasketCommand CreateBasket()
         {
             return new UpdateBasketCommand()
             {
@@ -35,7 +35,7 @@ namespace Basket.UnitTests.Helpers
             };
         }
 
-        public static BasketItemContract GetBasketItem()
+        public static BasketItemContract CreateProduct()
         {
             return new BasketItemContract()
             {

@@ -28,7 +28,7 @@ namespace Basket.UnitTests.Aggregates
         public void Load_ShouldThrowException_WhenBuyerIsNull()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+            var updateBasketCommand = FakeDataGenerator.CreateBasket();
             updateBasketCommand.BuyerId = null;
 
             // Act
@@ -41,7 +41,7 @@ namespace Basket.UnitTests.Aggregates
         public void Load_ShouldCreateBasket_WhenBasketDoesValid()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+            var updateBasketCommand = FakeDataGenerator.CreateBasket();
 
             // Act
             var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
@@ -54,7 +54,7 @@ namespace Basket.UnitTests.Aggregates
         public void AddCartItem_ShouldThrowException_WhenBasketItemsNullOrEmpty()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+            var updateBasketCommand = FakeDataGenerator.CreateBasket();
             updateBasketCommand.Items = null;
 
             // Act
@@ -72,14 +72,14 @@ namespace Basket.UnitTests.Aggregates
         public void AddCartItem_ShouldAddProductsToBasket_WhenBasketItemsAreValid()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.GetBasketCommand();
+            var updateBasketCommand = FakeDataGenerator.CreateBasket();
 
             // Act
             var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
 
             basket.AddCartItem(new List<BasketItemContract>()
             {
-                FakeDataGenerator.GetBasketItem()
+                FakeDataGenerator.CreateProduct()
             });
 
             // Assert

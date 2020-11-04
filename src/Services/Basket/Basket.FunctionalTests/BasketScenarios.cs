@@ -9,6 +9,13 @@ using Xunit;
 
 namespace Basket.FunctionalTests
 {
+    /// <summary>
+    /// Aslında bu da  api'in , UI tarafından contract test için mocklanarak temsil ettiği yer.
+    /// Yani api'da UI olmaksızın kendini fake data ile test etmiş oluyor.
+    /// Bunun birleşimi ise e2e çünkü uyumsuzluk olabilir . Contract'ın talebi ise fe tarafından yani client
+    /// tarafından verilmelidir. Api'in test ortamına çıkmadan çalışması gereken en son test.
+    /// https://www.pgs-soft.com/blog/test-pyramid-in-practice/
+    /// </summary>
     public class BasketScenarios
         : BasketScenarioBase
     {

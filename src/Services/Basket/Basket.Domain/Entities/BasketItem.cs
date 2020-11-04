@@ -33,6 +33,9 @@ namespace Basket.Domain.Entities
 
         public static BasketItem Load(BasketItemContract basketItemContract)
         {
+             Guard.That<DomainException>(basketItemContract == null, nameof(DomainErrorCodes.EDBasket1008),
+                DomainErrorCodes.EDBasket1008);
+
             Guard.That<DomainException>(basketItemContract.ProductId <= 0, nameof(DomainErrorCodes.EDBasket1009),
                 DomainErrorCodes.EDBasket1009);
 

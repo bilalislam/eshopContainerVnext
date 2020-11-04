@@ -38,6 +38,7 @@ using Basket.Application;
 using GrpcBasket;
 using MediatR;
 using Microsoft.AspNetCore.Http.Features;
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
 namespace Microsoft.eShopOnContainers.Services.Basket.API
@@ -58,6 +59,12 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddScoped<IBasketAssembler, BasketAssembler>();
             services.AddMediatR(Assembly.Load("Basket.Application"));
             services.AddBasketApplicationComponents();
+            services.AddApiVersioning(config =>
+            {
+                config.DefaultApiVersion = new ApiVersion(1, 0);
+                config.AssumeDefaultVersionWhenUnspecified = true;
+            });
+
 
             services.AddGrpc(options => { options.EnableDetailedErrors = true; });
 
