@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Threading.Tasks;
 using Basket.Domain.Events;
@@ -7,6 +8,7 @@ using RabbitMQ.Client;
 
 namespace Basket.Infrastructure.Bus.RabbitMq
 {
+    [ExcludeFromCodeCoverage]
     public class EventBusRabbitMq : IEventBus
     {
         private readonly ObjectPool<IConnection> _connectionPool;

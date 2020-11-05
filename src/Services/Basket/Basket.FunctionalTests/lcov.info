@@ -1,0 +1,3629 @@
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Application/UseCases/UpdateBasket/UpdateBasketCommandHandler.cs
+FN:15,System.Void Basket.Application.UseCases.UpdateBasket.UpdateBasketCommandHandler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Domain.RepositoryInterfaces.IBasketCommandRepository)
+FNDA:0,System.Void Basket.Application.UseCases.UpdateBasket.UpdateBasketCommandHandler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Domain.RepositoryInterfaces.IBasketCommandRepository)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:32,System.Void Basket.Application.UseCases.UpdateBasket.UpdateBasketCommandHandler/<Handle>d__3::MoveNext()
+FNDA:0,System.Void Basket.Application.UseCases.UpdateBasket.UpdateBasketCommandHandler/<Handle>d__3::MoveNext()
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+BRDA:34,29,0,0
+BRDA:34,29,1,0
+BRDA:47,137,0,0
+BRDA:47,137,1,0
+BRDA:48,245,0,0
+BRDA:48,245,1,0
+LF:31
+LH:0
+BRF:6
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Application/UseCases/GetBasketById/GetBasketByIdCommandHandler.cs
+FN:16,System.Void Basket.Application.UseCases.GetBasketById.GetBasketByIdCommandHandler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Domain.RepositoryInterfaces.IBasketQueryRepository)
+FNDA:0,System.Void Basket.Application.UseCases.GetBasketById.GetBasketByIdCommandHandler::.ctor(Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Domain.RepositoryInterfaces.IBasketQueryRepository)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:25,System.Void Basket.Application.UseCases.GetBasketById.GetBasketByIdCommandHandler/<Handle>d__3::MoveNext()
+FNDA:0,System.Void Basket.Application.UseCases.GetBasketById.GetBasketByIdCommandHandler/<Handle>d__3::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+BRDA:27,29,0,0
+BRDA:27,29,1,0
+BRDA:36,109,0,0
+BRDA:36,109,1,0
+BRDA:37,224,0,0
+BRDA:37,224,1,0
+LF:35
+LH:0
+BRF:6
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Application/UseCases/DeleteBasket/DeleteBasketCommandHandler.cs
+FN:14,System.Void Basket.Application.UseCases.DeleteBasket.DeleteBasketCommandHandler::.ctor(Basket.Domain.RepositoryInterfaces.IBasketCommandRepository)
+FNDA:0,System.Void Basket.Application.UseCases.DeleteBasket.DeleteBasketCommandHandler::.ctor(Basket.Domain.RepositoryInterfaces.IBasketCommandRepository)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+FN:21,System.Void Basket.Application.UseCases.DeleteBasket.DeleteBasketCommandHandler/<Handle>d__2::MoveNext()
+FNDA:0,System.Void Basket.Application.UseCases.DeleteBasket.DeleteBasketCommandHandler/<Handle>d__2::MoveNext()
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+BRDA:23,29,0,0
+BRDA:23,29,1,0
+BRDA:32,109,0,0
+BRDA:32,109,1,0
+BRDA:33,217,0,0
+BRDA:33,217,1,0
+LF:25
+LH:0
+BRF:6
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Application/UseCases/CheckoutBasket/CheckoutBasketCommandHandler.cs
+FN:19,System.Void Basket.Application.UseCases.CheckoutBasket.CheckoutBasketCommandHandler::.ctor(Basket.Domain.RepositoryInterfaces.IBasketQueryRepository,Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Infrastructure.Bus.IEventBus)
+FNDA:0,System.Void Basket.Application.UseCases.CheckoutBasket.CheckoutBasketCommandHandler::.ctor(Basket.Domain.RepositoryInterfaces.IBasketQueryRepository,Basket.Domain.Assemblers.Interfaces.IBasketAssembler,Basket.Infrastructure.Bus.IEventBus)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+FN:38,System.Void Basket.Application.UseCases.CheckoutBasket.CheckoutBasketCommandHandler/<Handle>d__4::MoveNext()
+FNDA:0,System.Void Basket.Application.UseCases.CheckoutBasket.CheckoutBasketCommandHandler/<Handle>d__4::MoveNext()
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+BRDA:39,14,0,0
+BRDA:40,72,0,0
+BRDA:40,72,1,0
+BRDA:41,186,0,0
+BRDA:41,186,1,0
+BRDA:68,458,0,0
+BRDA:39,14,1,0
+BRDA:68,458,1,0
+BRDA:72,567,0,0
+BRDA:72,567,1,0
+LF:47
+LH:0
+BRF:10
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Events/EventBase.cs
+FN:16,System.Guid Basket.Domain.Events.EventBase::get_Id()
+FNDA:0,System.Guid Basket.Domain.Events.EventBase::get_Id()
+DA:17,0
+FN:17,System.Int32 Basket.Domain.Events.EventBase::get_EventVersion()
+FNDA:0,System.Int32 Basket.Domain.Events.EventBase::get_EventVersion()
+DA:18,0
+FN:18,System.DateTime Basket.Domain.Events.EventBase::get_OccurredOn()
+FNDA:0,System.DateTime Basket.Domain.Events.EventBase::get_OccurredOn()
+DA:19,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Entities/BasketItem.cs
+FN:14,System.Int32 Basket.Domain.Entities.BasketItem::get_ProductId()
+FNDA:0,System.Int32 Basket.Domain.Entities.BasketItem::get_ProductId()
+DA:15,0
+FN:15,System.String Basket.Domain.Entities.BasketItem::get_ProductName()
+FNDA:0,System.String Basket.Domain.Entities.BasketItem::get_ProductName()
+DA:16,0
+FN:16,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_UnitPrice()
+FNDA:0,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_UnitPrice()
+DA:17,0
+FN:17,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_OldUnitPrice()
+FNDA:0,Basket.Domain.ValueObjects.Money Basket.Domain.Entities.BasketItem::get_OldUnitPrice()
+DA:18,0
+FN:18,System.Int32 Basket.Domain.Entities.BasketItem::get_Quantity()
+FNDA:0,System.Int32 Basket.Domain.Entities.BasketItem::get_Quantity()
+DA:19,0
+FN:19,System.String Basket.Domain.Entities.BasketItem::get_PictureUrl()
+FNDA:0,System.String Basket.Domain.Entities.BasketItem::get_PictureUrl()
+DA:20,0
+FN:34,Basket.Domain.Entities.BasketItem Basket.Domain.Entities.BasketItem::Load(Basket.Domain.Contracts.BasketItemContract)
+FNDA:0,Basket.Domain.Entities.BasketItem Basket.Domain.Entities.BasketItem::Load(Basket.Domain.Contracts.BasketItemContract)
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+FN:23,System.Void Basket.Domain.Entities.BasketItem::.ctor(System.Int32,System.String,Basket.Domain.ValueObjects.Money,Basket.Domain.ValueObjects.Money,System.Int32,System.String)
+FNDA:0,System.Void Basket.Domain.Entities.BasketItem::.ctor(System.Int32,System.String,Basket.Domain.ValueObjects.Money,Basket.Domain.ValueObjects.Money,System.Int32,System.String)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+LF:36
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Commands/GetBasketById/CommandResultBase.cs
+FN:7,Basket.Domain.Commands.ValidationState Basket.Domain.Commands.GetBasketById.CommandResultBase::get_ValidateState()
+FNDA:0,Basket.Domain.Commands.ValidationState Basket.Domain.Commands.GetBasketById.CommandResultBase::get_ValidateState()
+DA:8,0
+FN:8,System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.MessageContract> Basket.Domain.Commands.GetBasketById.CommandResultBase::get_Messages()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.MessageContract> Basket.Domain.Commands.GetBasketById.CommandResultBase::get_Messages()
+DA:9,0
+FN:9,System.String Basket.Domain.Commands.GetBasketById.CommandResultBase::get_ReturnPath()
+FNDA:0,System.String Basket.Domain.Commands.GetBasketById.CommandResultBase::get_ReturnPath()
+DA:10,0
+FN:11,System.Boolean Basket.Domain.Commands.GetBasketById.CommandResultBase::get_Success()
+FNDA:0,System.Boolean Basket.Domain.Commands.GetBasketById.CommandResultBase::get_Success()
+DA:12,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.Domain/Aggregates/Basket.cs
+FN:20,System.String Basket.Domain.Aggregates.Basket::get_BuyerId()
+FNDA:0,System.String Basket.Domain.Aggregates.Basket::get_BuyerId()
+DA:21,0
+FN:22,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem> Basket.Domain.Aggregates.Basket::get_Items()
+FNDA:0,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem> Basket.Domain.Aggregates.Basket::get_Items()
+DA:23,0
+FN:44,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::Load(Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand)
+FNDA:0,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::Load(Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand)
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+FN:55,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::AddCartItem(System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.BasketItemContract>)
+FNDA:0,Basket.Domain.Aggregates.Basket Basket.Domain.Aggregates.Basket::AddCartItem(System.Collections.Generic.IEnumerable`1<Basket.Domain.Contracts.BasketItemContract>)
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:70,0
+BRDA:57,2,0,0
+BRDA:57,2,1,0
+BRDA:62,113,1,0
+BRDA:62,113,0,0
+FN:30,System.Void Basket.Domain.Aggregates.Basket::.ctor(System.String,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem>)
+FNDA:0,System.Void Basket.Domain.Aggregates.Basket::.ctor(System.String,System.Collections.Generic.List`1<Basket.Domain.Entities.BasketItem>)
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+LF:28
+LH:0
+BRF:4
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Grpc/BasketService.cs
+FN:61,GrpcBasket.CustomerBasketResponse GrpcBasket.BasketService::MapToCustomerBasketResponse(Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket)
+FNDA:0,GrpcBasket.CustomerBasketResponse GrpcBasket.BasketService::MapToCustomerBasketResponse(Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket)
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+DA:80,0
+FN:82,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket GrpcBasket.BasketService::MapToCustomerBasket(GrpcBasket.CustomerBasketRequest)
+FNDA:0,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket GrpcBasket.BasketService::MapToCustomerBasket(GrpcBasket.CustomerBasketRequest)
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:100,0
+DA:101,0
+FN:15,System.Void GrpcBasket.BasketService::.ctor(Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository,Microsoft.Extensions.Logging.ILogger`1<GrpcBasket.BasketService>)
+FNDA:0,System.Void GrpcBasket.BasketService::.ctor(Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository,Microsoft.Extensions.Logging.ILogger`1<GrpcBasket.BasketService>)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+FN:23,System.Void GrpcBasket.BasketService/<GetBasketById>d__3::MoveNext()
+FNDA:0,System.Void GrpcBasket.BasketService/<GetBasketById>d__3::MoveNext()
+DA:24,0
+DA:25,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+BRDA:27,114,0,0
+BRDA:27,114,1,0
+BRDA:29,228,0,0
+BRDA:29,228,1,0
+FN:43,System.Void GrpcBasket.BasketService/<UpdateBasket>d__4::MoveNext()
+FNDA:0,System.Void GrpcBasket.BasketService/<UpdateBasket>d__4::MoveNext()
+DA:44,0
+DA:45,0
+DA:47,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:56,0
+DA:58,0
+DA:59,0
+BRDA:49,118,0,0
+BRDA:49,118,1,0
+BRDA:51,232,0,0
+BRDA:51,232,1,0
+LF:61
+LH:0
+BRF:8
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/obj/Debug/netcoreapp3.1/Basket.cs
+FN:19,Google.Protobuf.Reflection.FileDescriptor GrpcBasket.BasketReflection::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.FileDescriptor GrpcBasket.BasketReflection::get_Descriptor()
+DA:20,0
+FN:23,System.Void GrpcBasket.BasketReflection::.cctor()
+FNDA:0,System.Void GrpcBasket.BasketReflection::.cctor()
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+FN:57,Google.Protobuf.MessageParser`1<GrpcBasket.BasketRequest> GrpcBasket.BasketRequest::get_Parser()
+FNDA:0,Google.Protobuf.MessageParser`1<GrpcBasket.BasketRequest> GrpcBasket.BasketRequest::get_Parser()
+DA:58,0
+FN:61,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketRequest::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketRequest::get_Descriptor()
+DA:62,0
+FN:66,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketRequest::pb::Google.Protobuf.IMessage.get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketRequest::pb::Google.Protobuf.IMessage.get_Descriptor()
+DA:67,0
+FN:83,GrpcBasket.BasketRequest GrpcBasket.BasketRequest::Clone()
+FNDA:0,GrpcBasket.BasketRequest GrpcBasket.BasketRequest::Clone()
+DA:84,0
+DA:85,0
+DA:86,0
+FN:92,System.String GrpcBasket.BasketRequest::get_Id()
+FNDA:0,System.String GrpcBasket.BasketRequest::get_Id()
+DA:93,0
+FN:93,System.Void GrpcBasket.BasketRequest::set_Id(System.String)
+FNDA:0,System.Void GrpcBasket.BasketRequest::set_Id(System.String)
+DA:94,0
+DA:95,0
+DA:96,0
+FN:99,System.Boolean GrpcBasket.BasketRequest::Equals(System.Object)
+FNDA:0,System.Boolean GrpcBasket.BasketRequest::Equals(System.Object)
+DA:100,0
+DA:101,0
+DA:102,0
+FN:104,System.Boolean GrpcBasket.BasketRequest::Equals(GrpcBasket.BasketRequest)
+FNDA:0,System.Boolean GrpcBasket.BasketRequest::Equals(GrpcBasket.BasketRequest)
+DA:105,0
+DA:106,0
+DA:107,0
+DA:109,0
+DA:110,0
+DA:112,0
+DA:113,0
+DA:114,0
+BRDA:106,7,0,0
+BRDA:106,7,1,0
+BRDA:109,20,0,0
+BRDA:109,20,1,0
+BRDA:112,46,0,0
+BRDA:112,46,1,0
+FN:116,System.Int32 GrpcBasket.BasketRequest::GetHashCode()
+FNDA:0,System.Int32 GrpcBasket.BasketRequest::GetHashCode()
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+BRDA:119,19,0,0
+BRDA:119,19,1,0
+BRDA:120,46,0,0
+BRDA:120,46,1,0
+FN:126,System.String GrpcBasket.BasketRequest::ToString()
+FNDA:0,System.String GrpcBasket.BasketRequest::ToString()
+DA:127,0
+DA:128,0
+DA:129,0
+FN:131,System.Void GrpcBasket.BasketRequest::WriteTo(Google.Protobuf.CodedOutputStream)
+FNDA:0,System.Void GrpcBasket.BasketRequest::WriteTo(Google.Protobuf.CodedOutputStream)
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+BRDA:133,17,0,0
+BRDA:133,17,1,0
+BRDA:137,54,0,0
+BRDA:137,54,1,0
+FN:142,System.Int32 GrpcBasket.BasketRequest::CalculateSize()
+FNDA:0,System.Int32 GrpcBasket.BasketRequest::CalculateSize()
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+BRDA:145,19,0,0
+BRDA:145,19,1,0
+BRDA:148,50,0,0
+BRDA:148,50,1,0
+FN:154,System.Void GrpcBasket.BasketRequest::MergeFrom(GrpcBasket.BasketRequest)
+FNDA:0,System.Void GrpcBasket.BasketRequest::MergeFrom(GrpcBasket.BasketRequest)
+DA:155,0
+DA:156,0
+DA:157,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+BRDA:156,7,0,0
+BRDA:156,7,1,0
+BRDA:159,28,0,0
+BRDA:159,28,1,0
+FN:165,System.Void GrpcBasket.BasketRequest::MergeFrom(Google.Protobuf.CodedInputStream)
+FNDA:0,System.Void GrpcBasket.BasketRequest::MergeFrom(Google.Protobuf.CodedInputStream)
+DA:166,0
+DA:168,0
+DA:169,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:178,0
+DA:179,0
+BRDA:168,65,1,0
+BRDA:169,11,0,0
+BRDA:169,11,1,0
+BRDA:168,65,0,0
+FN:70,System.Void GrpcBasket.BasketRequest::.ctor()
+FNDA:0,System.Void GrpcBasket.BasketRequest::.ctor()
+DA:71,0
+DA:73,0
+DA:90,0
+FN:77,System.Void GrpcBasket.BasketRequest::.ctor(GrpcBasket.BasketRequest)
+FNDA:0,System.Void GrpcBasket.BasketRequest::.ctor(GrpcBasket.BasketRequest)
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+FN:54,System.Void GrpcBasket.BasketRequest::.cctor()
+FNDA:0,System.Void GrpcBasket.BasketRequest::.cctor()
+DA:55,0
+FN:186,Google.Protobuf.MessageParser`1<GrpcBasket.CustomerBasketRequest> GrpcBasket.CustomerBasketRequest::get_Parser()
+FNDA:0,Google.Protobuf.MessageParser`1<GrpcBasket.CustomerBasketRequest> GrpcBasket.CustomerBasketRequest::get_Parser()
+DA:187,0
+FN:190,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketRequest::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketRequest::get_Descriptor()
+DA:191,0
+FN:195,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketRequest::pb::Google.Protobuf.IMessage.get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketRequest::pb::Google.Protobuf.IMessage.get_Descriptor()
+DA:196,0
+FN:213,GrpcBasket.CustomerBasketRequest GrpcBasket.CustomerBasketRequest::Clone()
+FNDA:0,GrpcBasket.CustomerBasketRequest GrpcBasket.CustomerBasketRequest::Clone()
+DA:214,0
+DA:215,0
+DA:216,0
+FN:222,System.String GrpcBasket.CustomerBasketRequest::get_Buyerid()
+FNDA:0,System.String GrpcBasket.CustomerBasketRequest::get_Buyerid()
+DA:223,0
+FN:223,System.Void GrpcBasket.CustomerBasketRequest::set_Buyerid(System.String)
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::set_Buyerid(System.String)
+DA:224,0
+DA:225,0
+DA:226,0
+FN:235,Google.Protobuf.Collections.RepeatedField`1<GrpcBasket.BasketItemResponse> GrpcBasket.CustomerBasketRequest::get_Items()
+FNDA:0,Google.Protobuf.Collections.RepeatedField`1<GrpcBasket.BasketItemResponse> GrpcBasket.CustomerBasketRequest::get_Items()
+DA:236,0
+FN:239,System.Boolean GrpcBasket.CustomerBasketRequest::Equals(System.Object)
+FNDA:0,System.Boolean GrpcBasket.CustomerBasketRequest::Equals(System.Object)
+DA:240,0
+DA:241,0
+DA:242,0
+FN:244,System.Boolean GrpcBasket.CustomerBasketRequest::Equals(GrpcBasket.CustomerBasketRequest)
+FNDA:0,System.Boolean GrpcBasket.CustomerBasketRequest::Equals(GrpcBasket.CustomerBasketRequest)
+DA:245,0
+DA:246,0
+DA:247,0
+DA:249,0
+DA:250,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+BRDA:246,7,0,0
+BRDA:246,7,1,0
+BRDA:249,20,0,0
+BRDA:249,20,1,0
+BRDA:252,46,0,0
+BRDA:252,46,1,0
+BRDA:253,76,0,0
+BRDA:253,76,1,0
+FN:257,System.Int32 GrpcBasket.CustomerBasketRequest::GetHashCode()
+FNDA:0,System.Int32 GrpcBasket.CustomerBasketRequest::GetHashCode()
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+BRDA:260,19,0,0
+BRDA:260,19,1,0
+BRDA:262,60,0,0
+BRDA:262,60,1,0
+FN:268,System.String GrpcBasket.CustomerBasketRequest::ToString()
+FNDA:0,System.String GrpcBasket.CustomerBasketRequest::ToString()
+DA:269,0
+DA:270,0
+DA:271,0
+FN:273,System.Void GrpcBasket.CustomerBasketRequest::WriteTo(Google.Protobuf.CodedOutputStream)
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::WriteTo(Google.Protobuf.CodedOutputStream)
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+BRDA:275,17,0,0
+BRDA:275,17,1,0
+BRDA:280,72,0,0
+BRDA:280,72,1,0
+FN:285,System.Int32 GrpcBasket.CustomerBasketRequest::CalculateSize()
+FNDA:0,System.Int32 GrpcBasket.CustomerBasketRequest::CalculateSize()
+DA:286,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:296,0
+BRDA:288,19,0,0
+BRDA:288,19,1,0
+BRDA:292,69,0,0
+BRDA:292,69,1,0
+FN:298,System.Void GrpcBasket.CustomerBasketRequest::MergeFrom(GrpcBasket.CustomerBasketRequest)
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::MergeFrom(GrpcBasket.CustomerBasketRequest)
+DA:299,0
+DA:300,0
+DA:301,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:307,0
+DA:308,0
+BRDA:300,7,0,0
+BRDA:300,7,1,0
+BRDA:303,28,0,0
+BRDA:303,28,1,0
+FN:310,System.Void GrpcBasket.CustomerBasketRequest::MergeFrom(Google.Protobuf.CodedInputStream)
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::MergeFrom(Google.Protobuf.CodedInputStream)
+DA:311,0
+DA:313,0
+DA:314,0
+DA:316,0
+DA:317,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:322,0
+DA:323,0
+DA:324,0
+DA:327,0
+DA:328,0
+BRDA:313,93,1,0
+BRDA:314,11,0,0
+BRDA:314,18,0,0
+BRDA:314,11,1,0
+BRDA:314,18,1,0
+BRDA:313,93,0,0
+FN:199,System.Void GrpcBasket.CustomerBasketRequest::.ctor()
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::.ctor()
+DA:200,0
+DA:202,0
+DA:220,0
+DA:233,0
+FN:206,System.Void GrpcBasket.CustomerBasketRequest::.ctor(GrpcBasket.CustomerBasketRequest)
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::.ctor(GrpcBasket.CustomerBasketRequest)
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+FN:183,System.Void GrpcBasket.CustomerBasketRequest::.cctor()
+FNDA:0,System.Void GrpcBasket.CustomerBasketRequest::.cctor()
+DA:184,0
+DA:231,0
+DA:232,0
+FN:335,Google.Protobuf.MessageParser`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.CustomerBasketResponse::get_Parser()
+FNDA:0,Google.Protobuf.MessageParser`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.CustomerBasketResponse::get_Parser()
+DA:336,0
+FN:339,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketResponse::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketResponse::get_Descriptor()
+DA:340,0
+FN:344,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketResponse::pb::Google.Protobuf.IMessage.get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.CustomerBasketResponse::pb::Google.Protobuf.IMessage.get_Descriptor()
+DA:345,0
+FN:362,GrpcBasket.CustomerBasketResponse GrpcBasket.CustomerBasketResponse::Clone()
+FNDA:0,GrpcBasket.CustomerBasketResponse GrpcBasket.CustomerBasketResponse::Clone()
+DA:363,0
+DA:364,0
+DA:365,0
+FN:371,System.String GrpcBasket.CustomerBasketResponse::get_Buyerid()
+FNDA:0,System.String GrpcBasket.CustomerBasketResponse::get_Buyerid()
+DA:372,0
+FN:372,System.Void GrpcBasket.CustomerBasketResponse::set_Buyerid(System.String)
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::set_Buyerid(System.String)
+DA:373,0
+DA:374,0
+DA:375,0
+FN:384,Google.Protobuf.Collections.RepeatedField`1<GrpcBasket.BasketItemResponse> GrpcBasket.CustomerBasketResponse::get_Items()
+FNDA:0,Google.Protobuf.Collections.RepeatedField`1<GrpcBasket.BasketItemResponse> GrpcBasket.CustomerBasketResponse::get_Items()
+DA:385,0
+FN:388,System.Boolean GrpcBasket.CustomerBasketResponse::Equals(System.Object)
+FNDA:0,System.Boolean GrpcBasket.CustomerBasketResponse::Equals(System.Object)
+DA:389,0
+DA:390,0
+DA:391,0
+FN:393,System.Boolean GrpcBasket.CustomerBasketResponse::Equals(GrpcBasket.CustomerBasketResponse)
+FNDA:0,System.Boolean GrpcBasket.CustomerBasketResponse::Equals(GrpcBasket.CustomerBasketResponse)
+DA:394,0
+DA:395,0
+DA:396,0
+DA:398,0
+DA:399,0
+DA:401,0
+DA:402,0
+DA:403,0
+DA:404,0
+BRDA:395,7,0,0
+BRDA:395,7,1,0
+BRDA:398,20,0,0
+BRDA:398,20,1,0
+BRDA:401,46,0,0
+BRDA:401,46,1,0
+BRDA:402,76,0,0
+BRDA:402,76,1,0
+FN:406,System.Int32 GrpcBasket.CustomerBasketResponse::GetHashCode()
+FNDA:0,System.Int32 GrpcBasket.CustomerBasketResponse::GetHashCode()
+DA:407,0
+DA:408,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:413,0
+DA:414,0
+DA:415,0
+BRDA:409,19,0,0
+BRDA:409,19,1,0
+BRDA:411,60,0,0
+BRDA:411,60,1,0
+FN:417,System.String GrpcBasket.CustomerBasketResponse::ToString()
+FNDA:0,System.String GrpcBasket.CustomerBasketResponse::ToString()
+DA:418,0
+DA:419,0
+DA:420,0
+FN:422,System.Void GrpcBasket.CustomerBasketResponse::WriteTo(Google.Protobuf.CodedOutputStream)
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::WriteTo(Google.Protobuf.CodedOutputStream)
+DA:423,0
+DA:424,0
+DA:425,0
+DA:426,0
+DA:427,0
+DA:428,0
+DA:429,0
+DA:430,0
+DA:431,0
+DA:432,0
+BRDA:424,17,0,0
+BRDA:424,17,1,0
+BRDA:429,72,0,0
+BRDA:429,72,1,0
+FN:434,System.Int32 GrpcBasket.CustomerBasketResponse::CalculateSize()
+FNDA:0,System.Int32 GrpcBasket.CustomerBasketResponse::CalculateSize()
+DA:435,0
+DA:436,0
+DA:437,0
+DA:438,0
+DA:439,0
+DA:440,0
+DA:441,0
+DA:442,0
+DA:443,0
+DA:444,0
+DA:445,0
+BRDA:437,19,0,0
+BRDA:437,19,1,0
+BRDA:441,69,0,0
+BRDA:441,69,1,0
+FN:447,System.Void GrpcBasket.CustomerBasketResponse::MergeFrom(GrpcBasket.CustomerBasketResponse)
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::MergeFrom(GrpcBasket.CustomerBasketResponse)
+DA:448,0
+DA:449,0
+DA:450,0
+DA:452,0
+DA:453,0
+DA:454,0
+DA:455,0
+DA:456,0
+DA:457,0
+BRDA:449,7,0,0
+BRDA:449,7,1,0
+BRDA:452,28,0,0
+BRDA:452,28,1,0
+FN:459,System.Void GrpcBasket.CustomerBasketResponse::MergeFrom(Google.Protobuf.CodedInputStream)
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::MergeFrom(Google.Protobuf.CodedInputStream)
+DA:460,0
+DA:462,0
+DA:463,0
+DA:465,0
+DA:466,0
+DA:467,0
+DA:468,0
+DA:469,0
+DA:471,0
+DA:472,0
+DA:473,0
+DA:476,0
+DA:477,0
+BRDA:462,93,1,0
+BRDA:463,11,0,0
+BRDA:463,18,0,0
+BRDA:463,11,1,0
+BRDA:463,18,1,0
+BRDA:462,93,0,0
+FN:348,System.Void GrpcBasket.CustomerBasketResponse::.ctor()
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::.ctor()
+DA:349,0
+DA:351,0
+DA:369,0
+DA:382,0
+FN:355,System.Void GrpcBasket.CustomerBasketResponse::.ctor(GrpcBasket.CustomerBasketResponse)
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::.ctor(GrpcBasket.CustomerBasketResponse)
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+DA:360,0
+FN:332,System.Void GrpcBasket.CustomerBasketResponse::.cctor()
+FNDA:0,System.Void GrpcBasket.CustomerBasketResponse::.cctor()
+DA:333,0
+DA:380,0
+DA:381,0
+FN:484,Google.Protobuf.MessageParser`1<GrpcBasket.BasketItemResponse> GrpcBasket.BasketItemResponse::get_Parser()
+FNDA:0,Google.Protobuf.MessageParser`1<GrpcBasket.BasketItemResponse> GrpcBasket.BasketItemResponse::get_Parser()
+DA:485,0
+FN:488,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketItemResponse::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketItemResponse::get_Descriptor()
+DA:489,0
+FN:493,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketItemResponse::pb::Google.Protobuf.IMessage.get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.MessageDescriptor GrpcBasket.BasketItemResponse::pb::Google.Protobuf.IMessage.get_Descriptor()
+DA:494,0
+FN:516,GrpcBasket.BasketItemResponse GrpcBasket.BasketItemResponse::Clone()
+FNDA:0,GrpcBasket.BasketItemResponse GrpcBasket.BasketItemResponse::Clone()
+DA:517,0
+DA:518,0
+DA:519,0
+FN:525,System.String GrpcBasket.BasketItemResponse::get_Id()
+FNDA:0,System.String GrpcBasket.BasketItemResponse::get_Id()
+DA:526,0
+FN:526,System.Void GrpcBasket.BasketItemResponse::set_Id(System.String)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Id(System.String)
+DA:527,0
+DA:528,0
+DA:529,0
+FN:536,System.Int32 GrpcBasket.BasketItemResponse::get_Productid()
+FNDA:0,System.Int32 GrpcBasket.BasketItemResponse::get_Productid()
+DA:537,0
+FN:537,System.Void GrpcBasket.BasketItemResponse::set_Productid(System.Int32)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Productid(System.Int32)
+DA:538,0
+DA:539,0
+DA:540,0
+FN:547,System.String GrpcBasket.BasketItemResponse::get_Productname()
+FNDA:0,System.String GrpcBasket.BasketItemResponse::get_Productname()
+DA:548,0
+FN:548,System.Void GrpcBasket.BasketItemResponse::set_Productname(System.String)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Productname(System.String)
+DA:549,0
+DA:550,0
+DA:551,0
+FN:558,System.Double GrpcBasket.BasketItemResponse::get_Unitprice()
+FNDA:0,System.Double GrpcBasket.BasketItemResponse::get_Unitprice()
+DA:559,0
+FN:559,System.Void GrpcBasket.BasketItemResponse::set_Unitprice(System.Double)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Unitprice(System.Double)
+DA:560,0
+DA:561,0
+DA:562,0
+FN:569,System.Double GrpcBasket.BasketItemResponse::get_Oldunitprice()
+FNDA:0,System.Double GrpcBasket.BasketItemResponse::get_Oldunitprice()
+DA:570,0
+FN:570,System.Void GrpcBasket.BasketItemResponse::set_Oldunitprice(System.Double)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Oldunitprice(System.Double)
+DA:571,0
+DA:572,0
+DA:573,0
+FN:580,System.Int32 GrpcBasket.BasketItemResponse::get_Quantity()
+FNDA:0,System.Int32 GrpcBasket.BasketItemResponse::get_Quantity()
+DA:581,0
+FN:581,System.Void GrpcBasket.BasketItemResponse::set_Quantity(System.Int32)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Quantity(System.Int32)
+DA:582,0
+DA:583,0
+DA:584,0
+FN:591,System.String GrpcBasket.BasketItemResponse::get_Pictureurl()
+FNDA:0,System.String GrpcBasket.BasketItemResponse::get_Pictureurl()
+DA:592,0
+FN:592,System.Void GrpcBasket.BasketItemResponse::set_Pictureurl(System.String)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::set_Pictureurl(System.String)
+DA:593,0
+DA:594,0
+DA:595,0
+FN:598,System.Boolean GrpcBasket.BasketItemResponse::Equals(System.Object)
+FNDA:0,System.Boolean GrpcBasket.BasketItemResponse::Equals(System.Object)
+DA:599,0
+DA:600,0
+DA:601,0
+FN:603,System.Boolean GrpcBasket.BasketItemResponse::Equals(GrpcBasket.BasketItemResponse)
+FNDA:0,System.Boolean GrpcBasket.BasketItemResponse::Equals(GrpcBasket.BasketItemResponse)
+DA:604,0
+DA:605,0
+DA:606,0
+DA:608,0
+DA:609,0
+DA:611,0
+DA:612,0
+DA:613,0
+DA:614,0
+DA:615,0
+DA:616,0
+DA:617,0
+DA:618,0
+DA:619,0
+BRDA:605,7,0,0
+BRDA:605,7,1,0
+BRDA:608,23,0,0
+BRDA:608,23,1,0
+BRDA:611,52,0,0
+BRDA:611,52,1,0
+BRDA:612,82,0,0
+BRDA:612,82,1,0
+BRDA:613,112,0,0
+BRDA:613,112,1,0
+BRDA:614,150,0,0
+BRDA:614,150,1,0
+BRDA:615,185,0,0
+BRDA:615,185,1,0
+BRDA:616,212,0,0
+BRDA:616,212,1,0
+BRDA:617,239,0,0
+BRDA:617,239,1,0
+FN:621,System.Int32 GrpcBasket.BasketItemResponse::GetHashCode()
+FNDA:0,System.Int32 GrpcBasket.BasketItemResponse::GetHashCode()
+DA:622,0
+DA:623,0
+DA:624,0
+DA:625,0
+DA:626,0
+DA:627,0
+DA:628,0
+DA:629,0
+DA:630,0
+DA:631,0
+DA:632,0
+DA:633,0
+DA:634,0
+DA:635,0
+BRDA:624,19,0,0
+BRDA:624,19,1,0
+BRDA:625,46,0,0
+BRDA:625,46,1,0
+BRDA:626,83,0,0
+BRDA:626,83,1,0
+BRDA:627,123,0,0
+BRDA:627,123,1,0
+BRDA:628,168,0,0
+BRDA:628,168,1,0
+BRDA:629,202,0,0
+BRDA:629,202,1,0
+BRDA:630,239,0,0
+BRDA:630,239,1,0
+BRDA:631,268,0,0
+BRDA:631,268,1,0
+FN:637,System.String GrpcBasket.BasketItemResponse::ToString()
+FNDA:0,System.String GrpcBasket.BasketItemResponse::ToString()
+DA:638,0
+DA:639,0
+DA:640,0
+FN:642,System.Void GrpcBasket.BasketItemResponse::WriteTo(Google.Protobuf.CodedOutputStream)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::WriteTo(Google.Protobuf.CodedOutputStream)
+DA:643,0
+DA:644,0
+DA:645,0
+DA:646,0
+DA:647,0
+DA:648,0
+DA:649,0
+DA:650,0
+DA:651,0
+DA:652,0
+DA:653,0
+DA:654,0
+DA:655,0
+DA:656,0
+DA:657,0
+DA:658,0
+DA:659,0
+DA:660,0
+DA:661,0
+DA:662,0
+DA:663,0
+DA:664,0
+DA:665,0
+DA:666,0
+DA:667,0
+DA:668,0
+DA:669,0
+DA:670,0
+DA:671,0
+DA:672,0
+DA:673,0
+DA:674,0
+DA:675,0
+BRDA:644,17,0,0
+BRDA:644,17,1,0
+BRDA:648,54,0,0
+BRDA:648,54,1,0
+BRDA:652,96,0,0
+BRDA:652,96,1,0
+BRDA:656,144,0,0
+BRDA:656,144,1,0
+BRDA:660,194,0,0
+BRDA:660,194,1,0
+BRDA:664,233,0,0
+BRDA:664,233,1,0
+BRDA:668,277,0,0
+BRDA:668,277,1,0
+BRDA:672,316,0,0
+BRDA:672,316,1,0
+FN:677,System.Int32 GrpcBasket.BasketItemResponse::CalculateSize()
+FNDA:0,System.Int32 GrpcBasket.BasketItemResponse::CalculateSize()
+DA:678,0
+DA:679,0
+DA:680,0
+DA:681,0
+DA:682,0
+DA:683,0
+DA:684,0
+DA:685,0
+DA:686,0
+DA:687,0
+DA:688,0
+DA:689,0
+DA:690,0
+DA:691,0
+DA:692,0
+DA:693,0
+DA:694,0
+DA:695,0
+DA:696,0
+DA:697,0
+DA:698,0
+DA:699,0
+DA:700,0
+DA:701,0
+DA:702,0
+DA:703,0
+DA:704,0
+DA:705,0
+BRDA:680,19,0,0
+BRDA:680,19,1,0
+BRDA:683,50,0,0
+BRDA:683,50,1,0
+BRDA:686,86,0,0
+BRDA:686,86,1,0
+BRDA:689,130,0,0
+BRDA:689,130,1,0
+BRDA:692,163,0,0
+BRDA:692,163,1,0
+BRDA:695,185,0,0
+BRDA:695,185,1,0
+BRDA:698,223,0,0
+BRDA:698,223,1,0
+BRDA:701,256,0,0
+BRDA:701,256,1,0
+FN:707,System.Void GrpcBasket.BasketItemResponse::MergeFrom(GrpcBasket.BasketItemResponse)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::MergeFrom(GrpcBasket.BasketItemResponse)
+DA:708,0
+DA:709,0
+DA:710,0
+DA:712,0
+DA:713,0
+DA:714,0
+DA:715,0
+DA:716,0
+DA:717,0
+DA:718,0
+DA:719,0
+DA:720,0
+DA:721,0
+DA:722,0
+DA:723,0
+DA:724,0
+DA:725,0
+DA:726,0
+DA:727,0
+DA:728,0
+DA:729,0
+DA:730,0
+DA:731,0
+DA:732,0
+DA:733,0
+DA:734,0
+BRDA:709,7,0,0
+BRDA:709,7,1,0
+BRDA:712,31,0,0
+BRDA:712,31,1,0
+BRDA:715,59,0,0
+BRDA:715,59,1,0
+BRDA:718,92,0,0
+BRDA:718,92,1,0
+BRDA:721,133,0,0
+BRDA:721,133,1,0
+BRDA:724,174,0,0
+BRDA:724,174,1,0
+BRDA:727,204,0,0
+BRDA:727,204,1,0
+BRDA:730,239,0,0
+BRDA:730,239,1,0
+FN:736,System.Void GrpcBasket.BasketItemResponse::MergeFrom(Google.Protobuf.CodedInputStream)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::MergeFrom(Google.Protobuf.CodedInputStream)
+DA:737,0
+DA:739,0
+DA:740,0
+DA:742,0
+DA:743,0
+DA:744,0
+DA:745,0
+DA:746,0
+DA:748,0
+DA:749,0
+DA:750,0
+DA:752,0
+DA:753,0
+DA:754,0
+DA:756,0
+DA:757,0
+DA:758,0
+DA:760,0
+DA:761,0
+DA:762,0
+DA:764,0
+DA:765,0
+DA:766,0
+DA:768,0
+DA:769,0
+DA:770,0
+DA:773,0
+DA:774,0
+BRDA:739,216,1,0
+BRDA:740,14,0,0
+BRDA:740,19,0,0
+BRDA:740,26,0,0
+BRDA:740,14,1,0
+BRDA:740,40,0,0
+BRDA:740,45,0,0
+BRDA:740,40,1,0
+BRDA:740,59,0,0
+BRDA:740,33,0,0
+BRDA:740,52,0,0
+BRDA:740,66,0,0
+BRDA:740,19,1,0
+BRDA:740,26,1,0
+BRDA:740,33,1,0
+BRDA:740,45,1,0
+BRDA:740,52,1,0
+BRDA:740,59,1,0
+BRDA:740,66,1,0
+BRDA:739,216,0,0
+FN:497,System.Void GrpcBasket.BasketItemResponse::.ctor()
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::.ctor()
+DA:498,0
+DA:500,0
+DA:523,0
+DA:545,0
+DA:589,0
+FN:504,System.Void GrpcBasket.BasketItemResponse::.ctor(GrpcBasket.BasketItemResponse)
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::.ctor(GrpcBasket.BasketItemResponse)
+DA:505,0
+DA:506,0
+DA:507,0
+DA:508,0
+DA:509,0
+DA:510,0
+DA:511,0
+DA:512,0
+DA:513,0
+DA:514,0
+FN:481,System.Void GrpcBasket.BasketItemResponse::.cctor()
+FNDA:0,System.Void GrpcBasket.BasketItemResponse::.cctor()
+DA:482,0
+LF:483
+LH:0
+BRF:188
+BRH:0
+FNF:84
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/obj/Debug/netcoreapp3.1/BasketGrpc.cs
+FN:35,Google.Protobuf.Reflection.ServiceDescriptor GrpcBasket.Basket::get_Descriptor()
+FNDA:0,Google.Protobuf.Reflection.ServiceDescriptor GrpcBasket.Basket::get_Descriptor()
+DA:36,0
+FN:57,Grpc.Core.ServerServiceDefinition GrpcBasket.Basket::BindService(GrpcBasket.Basket/BasketBase)
+FNDA:0,Grpc.Core.ServerServiceDefinition GrpcBasket.Basket::BindService(GrpcBasket.Basket/BasketBase)
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+FN:68,System.Void GrpcBasket.Basket::BindService(Grpc.Core.ServiceBinderBase,GrpcBasket.Basket/BasketBase)
+FNDA:0,System.Void GrpcBasket.Basket::BindService(Grpc.Core.ServiceBinderBase,GrpcBasket.Basket/BasketBase)
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+BRDA:70,8,0,0
+BRDA:70,8,1,0
+BRDA:71,39,0,0
+BRDA:71,39,1,0
+FN:12,System.Void GrpcBasket.Basket::.cctor()
+FNDA:0,System.Void GrpcBasket.Basket::.cctor()
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+FN:43,System.Threading.Tasks.Task`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.Basket/BasketBase::GetBasketById(GrpcBasket.BasketRequest,Grpc.Core.ServerCallContext)
+FNDA:0,System.Threading.Tasks.Task`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.Basket/BasketBase::GetBasketById(GrpcBasket.BasketRequest,Grpc.Core.ServerCallContext)
+DA:44,0
+DA:45,0
+FN:48,System.Threading.Tasks.Task`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.Basket/BasketBase::UpdateBasket(GrpcBasket.CustomerBasketRequest,Grpc.Core.ServerCallContext)
+FNDA:0,System.Threading.Tasks.Task`1<GrpcBasket.CustomerBasketResponse> GrpcBasket.Basket/BasketBase::UpdateBasket(GrpcBasket.CustomerBasketRequest,Grpc.Core.ServerCallContext)
+DA:49,0
+DA:50,0
+LF:30
+LH:0
+BRF:4
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Program.cs
+FN:24,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Program::Main(System.String[])
+FNDA:0,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Program::Main(System.String[])
+DA:25,0
+DA:26,0
+DA:28,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+FN:51,Microsoft.AspNetCore.Hosting.IWebHost Microsoft.eShopOnContainers.Services.Basket.API.Program::BuildWebHost(Microsoft.Extensions.Configuration.IConfiguration,System.String[])
+FNDA:0,Microsoft.AspNetCore.Hosting.IWebHost Microsoft.eShopOnContainers.Services.Basket.API.Program::BuildWebHost(Microsoft.Extensions.Configuration.IConfiguration,System.String[])
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+FN:74,Serilog.ILogger Microsoft.eShopOnContainers.Services.Basket.API.Program::CreateSerilogLogger(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,Serilog.ILogger Microsoft.eShopOnContainers.Services.Basket.API.Program::CreateSerilogLogger(Microsoft.Extensions.Configuration.IConfiguration)
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+BRDA:78,117,0,0
+BRDA:78,117,1,0
+BRDA:78,199,0,0
+BRDA:78,199,1,0
+FN:89,Microsoft.Extensions.Configuration.IConfiguration Microsoft.eShopOnContainers.Services.Basket.API.Program::GetConfiguration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration Microsoft.eShopOnContainers.Services.Basket.API.Program::GetConfiguration()
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:106,0
+DA:107,0
+BRDA:98,55,0,0
+BRDA:98,55,1,0
+FN:109,System.ValueTuple`2<System.Int32,System.Int32> Microsoft.eShopOnContainers.Services.Basket.API.Program::GetDefinedPorts(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.ValueTuple`2<System.Int32,System.Int32> Microsoft.eShopOnContainers.Services.Basket.API.Program::GetDefinedPorts(Microsoft.Extensions.Configuration.IConfiguration)
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+FN:18,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Program::.cctor()
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Program::.cctor()
+DA:19,0
+DA:21,0
+DA:22,0
+LF:74
+LH:0
+BRF:10
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/TestHttpResponseTrailersFeature.cs
+FN:7,Microsoft.AspNetCore.Http.IHeaderDictionary Microsoft.eShopOnContainers.Services.Basket.API.TestHttpResponseTrailersFeature::get_Trailers()
+FNDA:0,Microsoft.AspNetCore.Http.IHeaderDictionary Microsoft.eShopOnContainers.Services.Basket.API.TestHttpResponseTrailersFeature::get_Trailers()
+DA:8,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Services/IdentityService.cs
+FN:16,System.String Microsoft.eShopOnContainers.Services.Basket.API.Services.IdentityService::GetUserIdentity()
+FNDA:0,System.String Microsoft.eShopOnContainers.Services.Basket.API.Services.IdentityService::GetUserIdentity()
+DA:17,0
+DA:18,0
+DA:19,0
+FN:10,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Services.IdentityService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Services.IdentityService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+BRDA:13,11,0,0
+BRDA:13,11,1,0
+LF:7
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Model/BasketItem.cs
+FN:7,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_Id()
+FNDA:0,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_Id()
+DA:8,0
+FN:8,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_ProductId()
+FNDA:0,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_ProductId()
+DA:9,0
+FN:9,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_ProductName()
+FNDA:0,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_ProductName()
+DA:10,0
+FN:10,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_UnitPrice()
+FNDA:0,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_UnitPrice()
+DA:11,0
+FN:11,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_OldUnitPrice()
+FNDA:0,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_OldUnitPrice()
+DA:12,0
+FN:12,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_Quantity()
+FNDA:0,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_Quantity()
+DA:13,0
+FN:13,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_PictureUrl()
+FNDA:0,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::get_PictureUrl()
+DA:14,0
+FN:15,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem::Validate(System.ComponentModel.DataAnnotations.ValidationContext)
+DA:16,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+BRDA:19,18,0,0
+BRDA:19,18,1,0
+LF:15
+LH:0
+BRF:2
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Model/CustomerBasket.cs
+FN:6,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::get_BuyerId()
+FNDA:0,System.String Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::get_BuyerId()
+DA:7,0
+FN:8,System.Collections.Generic.List`1<Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem> Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::get_Items()
+FNDA:0,System.Collections.Generic.List`1<Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem> Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::get_Items()
+DA:9,0
+FN:10,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::.ctor()
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::.ctor()
+DA:11,0
+DA:12,0
+DA:14,0
+FN:15,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::.ctor(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket::.ctor(System.String)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/IntegrationEvents/Events/ProductPriceChangedIntegrationEvent.cs
+FN:9,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_ProductId()
+FNDA:0,System.Int32 Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_ProductId()
+DA:10,0
+FN:11,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_NewPrice()
+FNDA:0,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_NewPrice()
+DA:12,0
+FN:13,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_OldPrice()
+FNDA:0,System.Decimal Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::get_OldPrice()
+DA:14,0
+FN:15,System.Void Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::.ctor(System.Int32,System.Decimal,System.Decimal)
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events.ProductPriceChangedIntegrationEvent::.ctor(System.Int32,System.Decimal,System.Decimal)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Repositories/RedisBasketRepository.cs
+FN:29,System.Collections.Generic.IEnumerable`1<System.String> Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::GetUsers()
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.String> Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::GetUsers()
+DA:30,0
+DA:31,0
+DA:32,0
+DA:34,0
+DA:35,0
+BRDA:34,32,0,0
+BRDA:34,32,1,0
+BRDA:34,44,0,0
+BRDA:34,44,1,0
+FN:64,StackExchange.Redis.IServer Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::GetServer()
+FNDA:0,StackExchange.Redis.IServer Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::GetServer()
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+FN:16,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::.ctor(Microsoft.Extensions.Logging.ILoggerFactory,StackExchange.Redis.ConnectionMultiplexer)
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository::.ctor(Microsoft.Extensions.Logging.ILoggerFactory,StackExchange.Redis.ConnectionMultiplexer)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:24,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<DeleteBasketAsync>d__4::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<DeleteBasketAsync>d__4::MoveNext()
+DA:25,0
+DA:26,0
+DA:27,0
+BRDA:26,56,0,0
+BRDA:26,56,1,0
+FN:37,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<GetBasketAsync>d__6::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<GetBasketAsync>d__6::MoveNext()
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:46,0
+DA:47,0
+BRDA:39,56,0,0
+BRDA:39,56,1,0
+BRDA:41,177,0,0
+BRDA:41,177,1,0
+FN:49,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<UpdateBasketAsync>d__7::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories.RedisBasketRepository/<UpdateBasketAsync>d__7::MoveNext()
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:59,0
+DA:61,0
+DA:62,0
+BRDA:50,14,0,0
+BRDA:51,98,0,0
+BRDA:51,98,1,0
+BRDA:53,206,0,0
+BRDA:53,206,1,0
+BRDA:61,306,0,0
+BRDA:50,14,1,0
+BRDA:61,306,1,0
+LF:34
+LH:0
+BRF:18
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Controllers/HomeController.cs
+FN:8,Microsoft.AspNetCore.Mvc.IActionResult Microsoft.eShopOnContainers.Services.Basket.API.Controllers.HomeController::Index()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult Microsoft.eShopOnContainers.Services.Basket.API.Controllers.HomeController::Index()
+DA:9,0
+DA:10,0
+DA:11,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Auth/Server/AuthorizationHeaderParameterOperationFilter.cs
+FN:12,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Auth.Server.AuthorizationHeaderParameterOperationFilter::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+FNDA:0,System.Void Microsoft.eShopOnContainers.Services.Basket.API.Auth.Server.AuthorizationHeaderParameterOperationFilter::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+BRDA:15,25,0,0
+BRDA:15,25,1,0
+BRDA:15,61,0,0
+BRDA:15,61,1,0
+BRDA:16,99,0,0
+BRDA:16,99,1,0
+BRDA:16,135,0,0
+BRDA:16,135,1,0
+BRDA:18,167,0,0
+BRDA:18,167,1,0
+BRDA:18,178,0,0
+BRDA:20,194,0,0
+BRDA:20,194,1,0
+BRDA:18,178,1,0
+LF:17
+LH:0
+BRF:14
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Startup.cs
+FN:41,Microsoft.Extensions.Configuration.IConfiguration Basket.API.Startup::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration Basket.API.Startup::get_Configuration()
+DA:42,0
+FN:45,System.Void Basket.API.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void Basket.API.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:101,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:151,0
+DA:152,0
+BRDA:58,48,0,0
+BRDA:58,48,1,0
+BRDA:60,86,0,0
+BRDA:60,86,1,0
+BRDA:68,149,0,0
+BRDA:68,149,1,0
+BRDA:138,219,0,0
+BRDA:138,219,1,0
+FN:155,System.Void Basket.API.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)
+FNDA:0,System.Void Basket.API.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)
+DA:156,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:176,0
+DA:177,0
+DA:180,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:214,0
+BRDA:161,52,0,0
+BRDA:161,52,1,0
+FN:216,System.Void Basket.API.Startup::RegisterAppInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void Basket.API.Startup::RegisterAppInsights(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+FN:222,System.Void Basket.API.Startup::ConfigureAuthService(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void Basket.API.Startup::ConfigureAuthService(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:223,0
+DA:225,0
+DA:227,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:239,0
+BRDA:229,52,0,0
+BRDA:229,52,1,0
+FN:241,System.Void Basket.API.Startup::ConfigureAuth(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+FNDA:0,System.Void Basket.API.Startup::ConfigureAuth(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:248,0
+DA:249,0
+DA:250,0
+BRDA:243,19,0,0
+BRDA:243,19,1,0
+FN:278,System.Void Basket.API.Startup::ConfigureEventBus(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+FNDA:0,System.Void Basket.API.Startup::ConfigureEventBus(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+DA:279,0
+DA:280,0
+DA:282,0
+DA:283,0
+DA:284,0
+FN:36,System.Void Basket.API.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void Basket.API.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+FN:290,Microsoft.Extensions.DependencyInjection.IServiceCollection Basket.API.CustomExtensionMethods::AddCustomHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,Microsoft.Extensions.DependencyInjection.IServiceCollection Basket.API.CustomExtensionMethods::AddCustomHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+DA:291,0
+DA:292,0
+DA:294,0
+DA:296,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:302,0
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:308,0
+DA:309,0
+BRDA:294,20,0,0
+BRDA:294,20,1,0
+LF:185
+LH:0
+BRF:52
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Model/BasketCheckout.cs
+FN:6,System.String Basket.API.Model.BasketCheckout::get_City()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_City()
+DA:7,0
+FN:8,System.String Basket.API.Model.BasketCheckout::get_Street()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_Street()
+DA:9,0
+FN:10,System.String Basket.API.Model.BasketCheckout::get_State()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_State()
+DA:11,0
+FN:12,System.String Basket.API.Model.BasketCheckout::get_Country()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_Country()
+DA:13,0
+FN:14,System.String Basket.API.Model.BasketCheckout::get_ZipCode()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_ZipCode()
+DA:15,0
+FN:16,System.String Basket.API.Model.BasketCheckout::get_CardNumber()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_CardNumber()
+DA:17,0
+FN:18,System.String Basket.API.Model.BasketCheckout::get_CardHolderName()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_CardHolderName()
+DA:19,0
+FN:20,System.DateTime Basket.API.Model.BasketCheckout::get_CardExpiration()
+FNDA:0,System.DateTime Basket.API.Model.BasketCheckout::get_CardExpiration()
+DA:21,0
+FN:22,System.String Basket.API.Model.BasketCheckout::get_CardSecurityNumber()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_CardSecurityNumber()
+DA:23,0
+FN:24,System.Int32 Basket.API.Model.BasketCheckout::get_CardTypeId()
+FNDA:0,System.Int32 Basket.API.Model.BasketCheckout::get_CardTypeId()
+DA:25,0
+FN:26,System.String Basket.API.Model.BasketCheckout::get_Buyer()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_Buyer()
+DA:27,0
+FN:28,System.String Basket.API.Model.BasketCheckout::get_BuyerId()
+FNDA:0,System.String Basket.API.Model.BasketCheckout::get_BuyerId()
+DA:29,0
+FN:29,System.Guid Basket.API.Model.BasketCheckout::get_RequestId()
+FNDA:0,System.Guid Basket.API.Model.BasketCheckout::get_RequestId()
+DA:30,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:13
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/IntegrationEvents/Events/OrderStartedIntegrationEvent.cs
+FN:9,System.String Basket.API.IntegrationEvents.Events.OrderStartedIntegrationEvent::get_UserId()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.OrderStartedIntegrationEvent::get_UserId()
+DA:10,0
+FN:11,System.Void Basket.API.IntegrationEvents.Events.OrderStartedIntegrationEvent::.ctor(System.String)
+FNDA:0,System.Void Basket.API.IntegrationEvents.Events.OrderStartedIntegrationEvent::.ctor(System.String)
+DA:12,0
+DA:13,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/IntegrationEvents/Events/UserCheckoutAcceptedIntegrationEvent.cs
+FN:8,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_UserId()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_UserId()
+DA:9,0
+FN:10,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_UserName()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_UserName()
+DA:11,0
+FN:12,System.Int32 Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_OrderNumber()
+FNDA:0,System.Int32 Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_OrderNumber()
+DA:13,0
+FN:14,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_City()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_City()
+DA:15,0
+FN:16,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Street()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Street()
+DA:17,0
+FN:18,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_State()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_State()
+DA:19,0
+FN:20,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Country()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Country()
+DA:21,0
+FN:22,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_ZipCode()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_ZipCode()
+DA:23,0
+FN:24,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardNumber()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardNumber()
+DA:25,0
+FN:26,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardHolderName()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardHolderName()
+DA:27,0
+FN:28,System.DateTime Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardExpiration()
+FNDA:0,System.DateTime Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardExpiration()
+DA:29,0
+FN:30,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardSecurityNumber()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardSecurityNumber()
+DA:31,0
+FN:32,System.Int32 Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardTypeId()
+FNDA:0,System.Int32 Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_CardTypeId()
+DA:33,0
+FN:34,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Buyer()
+FNDA:0,System.String Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Buyer()
+DA:35,0
+FN:36,System.Guid Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_RequestId()
+FNDA:0,System.Guid Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_RequestId()
+DA:37,0
+FN:38,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Basket()
+FNDA:0,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::get_Basket()
+DA:39,0
+FN:40,System.Void Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::.ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.Int32,System.String,System.Guid,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket)
+FNDA:0,System.Void Basket.API.IntegrationEvents.Events.UserCheckoutAcceptedIntegrationEvent::.ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.Int32,System.String,System.Guid,Microsoft.eShopOnContainers.Services.Basket.API.Model.CustomerBasket)
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+LF:37
+LH:0
+BRF:0
+BRH:0
+FNF:17
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/IntegrationEvents/EventHandling/OrderStartedIntegrationEventHandler.cs
+FN:16,System.Void Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler::.ctor(Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository,Microsoft.Extensions.Logging.ILogger`1<Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler>)
+FNDA:0,System.Void Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler::.ctor(Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository,Microsoft.Extensions.Logging.ILogger`1<Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+BRDA:21,11,0,0
+BRDA:21,11,1,0
+BRDA:22,33,0,0
+BRDA:22,33,1,0
+FN:25,System.Void Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler/<Handle>d__3::MoveNext()
+FNDA:0,System.Void Basket.API.IntegrationEvents.EventHandling.OrderStartedIntegrationEventHandler/<Handle>d__3::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:31,0
+DA:32,0
+DA:33,0
+BRDA:27,65,0,0
+BRDA:31,184,0,0
+BRDA:27,65,1,0
+BRDA:31,184,1,0
+LF:14
+LH:0
+BRF:8
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/IntegrationEvents/EventHandling/ProductPriceChangedIntegrationEventHandler.cs
+FN:17,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler::.ctor(Microsoft.Extensions.Logging.ILogger`1<Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler>,Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository)
+FNDA:0,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler::.ctor(Microsoft.Extensions.Logging.ILogger`1<Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler>,Microsoft.eShopOnContainers.Services.Basket.API.Model.IBasketRepository)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+BRDA:22,11,0,0
+BRDA:22,11,1,0
+BRDA:23,33,0,0
+BRDA:23,33,1,0
+FN:26,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<Handle>d__3::MoveNext()
+FNDA:0,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<Handle>d__3::MoveNext()
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+BRDA:28,67,0,0
+BRDA:28,67,1,0
+BRDA:34,180,0,0
+BRDA:34,522,1,0
+BRDA:36,255,0,0
+BRDA:34,180,1,0
+BRDA:36,255,1,0
+BRDA:38,419,0,0
+BRDA:34,186,1,0
+BRDA:38,419,1,0
+BRDA:34,186,0,0
+BRDA:34,522,0,0
+FN:44,System.Boolean Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<>c__DisplayClass4_0::<UpdatePriceInBasketItems>b__0(Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem)
+FNDA:0,System.Boolean Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<>c__DisplayClass4_0::<UpdatePriceInBasketItems>b__0(Microsoft.eShopOnContainers.Services.Basket.API.Model.BasketItem)
+DA:45,0
+FN:43,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<UpdatePriceInBasketItems>d__4::MoveNext()
+FNDA:0,System.Void Basket.API.IntegrationEvents.EventHandling.ProductPriceChangedIntegrationEventHandler/<UpdatePriceInBasketItems>d__4::MoveNext()
+DA:44,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+BRDA:45,54,0,0
+BRDA:45,54,1,0
+BRDA:45,66,0,0
+BRDA:45,66,1,0
+BRDA:47,115,0,0
+BRDA:51,310,1,0
+BRDA:53,234,0,0
+BRDA:53,234,1,0
+BRDA:51,310,0,0
+BRDA:60,384,0,0
+BRDA:60,384,1,0
+BRDA:47,115,1,0
+LF:36
+LH:0
+BRF:28
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Filters/HttpGlobalExceptionFilter.cs
+FN:24,System.Void Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter::OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+FNDA:0,System.Void Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter::OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+BRDA:30,80,0,0
+BRDA:30,80,1,0
+BRDA:47,201,0,0
+BRDA:47,201,1,0
+FN:17,System.Void Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter::.ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger`1<Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter>)
+FNDA:0,System.Void Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter::.ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger`1<Basket.API.Infrastructure.Filters.HttpGlobalExceptionFilter>)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:32
+LH:0
+BRF:4
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Filters/JsonErrorResponse.cs
+FN:4,System.String[] Basket.API.Infrastructure.Filters.JsonErrorResponse::get_Messages()
+FNDA:0,System.String[] Basket.API.Infrastructure.Filters.JsonErrorResponse::get_Messages()
+DA:5,0
+FN:6,System.Object Basket.API.Infrastructure.Filters.JsonErrorResponse::get_DeveloperMessage()
+FNDA:0,System.Object Basket.API.Infrastructure.Filters.JsonErrorResponse::get_DeveloperMessage()
+DA:7,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Filters/ValidateModelStateFilter.cs
+FN:9,System.Void Basket.API.Infrastructure.Filters.ValidateModelStateFilter::OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+FNDA:0,System.Void Basket.API.Infrastructure.Filters.ValidateModelStateFilter::OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:27,0
+DA:28,0
+BRDA:11,32,0,0
+BRDA:11,32,1,0
+BRDA:16,81,0,0
+BRDA:16,81,1,0
+LF:15
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/AuthorizeCheckOperationFilter.cs
+FN:11,System.Void Basket.API.Infrastructure.Filters.AuthorizeCheckOperationFilter::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+FNDA:0,System.Void Basket.API.Infrastructure.Filters.AuthorizeCheckOperationFilter::Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)
+DA:12,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:19,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+BRDA:14,28,0,0
+BRDA:14,28,1,0
+BRDA:17,62,1,0
+BRDA:17,62,0,0
+LF:18
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Exceptions/FailingMiddlewareAppBuilderExtensions.cs
+FN:8,Microsoft.AspNetCore.Builder.IApplicationBuilder Basket.API.Infrastructure.Middlewares.FailingMiddlewareAppBuilderExtensions::UseFailingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+FNDA:0,Microsoft.AspNetCore.Builder.IApplicationBuilder Basket.API.Infrastructure.Middlewares.FailingMiddlewareAppBuilderExtensions::UseFailingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+DA:9,0
+DA:10,0
+DA:11,0
+FN:12,Microsoft.AspNetCore.Builder.IApplicationBuilder Basket.API.Infrastructure.Middlewares.FailingMiddlewareAppBuilderExtensions::UseFailingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+FNDA:0,Microsoft.AspNetCore.Builder.IApplicationBuilder Basket.API.Infrastructure.Middlewares.FailingMiddlewareAppBuilderExtensions::UseFailingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+BRDA:15,8,1,0
+BRDA:15,8,0,0
+LF:9
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/ByPassAuthMiddleware.cs
+FN:14,System.Void Basket.API.Infrastructure.Middlewares.ByPassAuthMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.ByPassAuthMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+FN:22,System.Void Basket.API.Infrastructure.Middlewares.ByPassAuthMiddleware/<Invoke>d__3::MoveNext()
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.ByPassAuthMiddleware/<Invoke>d__3::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+BRDA:25,88,0,0
+BRDA:28,147,0,0
+BRDA:28,147,1,0
+BRDA:34,277,0,0
+BRDA:34,277,1,0
+BRDA:25,88,1,0
+BRDA:37,398,0,0
+BRDA:42,505,0,0
+BRDA:42,505,1,0
+BRDA:37,398,1,0
+BRDA:49,661,0,0
+BRDA:52,697,0,0
+BRDA:52,715,0,0
+BRDA:52,697,1,0
+BRDA:52,715,1,0
+BRDA:52,747,0,0
+BRDA:52,747,1,0
+BRDA:49,661,1,0
+BRDA:59,804,0,0
+BRDA:59,804,1,0
+BRDA:75,1074,0,0
+BRDA:75,1074,1,0
+LF:53
+LH:0
+BRF:22
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/FailingMiddleware.cs
+FN:79,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware::MustFail(Microsoft.AspNetCore.Http.HttpContext)
+FNDA:0,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware::MustFail(Microsoft.AspNetCore.Http.HttpContext)
+DA:80,0
+DA:81,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+BRDA:83,62,0,0
+BRDA:83,62,1,0
+BRDA:88,75,0,0
+BRDA:88,105,0,0
+BRDA:88,105,1,0
+BRDA:88,75,1,0
+FN:14,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger`1<Basket.API.Infrastructure.Middlewares.FailingMiddleware>,Basket.API.Infrastructure.Middlewares.FailingOptions)
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger`1<Basket.API.Infrastructure.Middlewares.FailingMiddleware>,Basket.API.Infrastructure.Middlewares.FailingOptions)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:22,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<Invoke>d__5::MoveNext()
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<Invoke>d__5::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+BRDA:25,100,0,0
+BRDA:27,133,0,0
+BRDA:27,133,1,0
+BRDA:25,100,1,0
+BRDA:31,236,0,0
+BRDA:36,373,0,0
+BRDA:36,373,1,0
+BRDA:31,236,1,0
+BRDA:40,492,0,0
+BRDA:40,492,1,0
+FN:45,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware/<>c::<ProcessConfigRequest>b__6_0(System.String)
+FNDA:0,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware/<>c::<ProcessConfigRequest>b__6_0(System.String)
+DA:46,0
+FN:46,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware/<>c::<ProcessConfigRequest>b__6_1(System.String)
+FNDA:0,System.Boolean Basket.API.Infrastructure.Middlewares.FailingMiddleware/<>c::<ProcessConfigRequest>b__6_1(System.String)
+DA:47,0
+FN:44,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<ProcessConfigRequest>d__6::MoveNext()
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<ProcessConfigRequest>d__6::MoveNext()
+DA:45,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:68,0
+DA:69,0
+DA:70,0
+BRDA:46,71,0,0
+BRDA:46,71,1,0
+BRDA:47,134,0,0
+BRDA:47,134,1,0
+BRDA:49,184,0,0
+BRDA:49,184,1,0
+BRDA:54,206,0,0
+BRDA:57,259,0,0
+BRDA:57,259,1,0
+BRDA:54,206,1,0
+BRDA:60,352,0,0
+BRDA:63,406,0,0
+BRDA:63,406,1,0
+BRDA:60,352,1,0
+BRDA:68,519,0,0
+BRDA:68,519,1,0
+BRDA:68,557,0,0
+BRDA:68,557,1,0
+FN:72,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<SendOkResponse>d__7::MoveNext()
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingMiddleware/<SendOkResponse>d__7::MoveNext()
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+BRDA:76,103,0,0
+BRDA:76,103,1,0
+LF:57
+LH:0
+BRF:36
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/FailingOptions.cs
+FN:7,System.Collections.Generic.List`1<System.String> Basket.API.Infrastructure.Middlewares.FailingOptions::get_EndpointPaths()
+FNDA:0,System.Collections.Generic.List`1<System.String> Basket.API.Infrastructure.Middlewares.FailingOptions::get_EndpointPaths()
+DA:8,0
+FN:9,System.Collections.Generic.List`1<System.String> Basket.API.Infrastructure.Middlewares.FailingOptions::get_NotFilteredPaths()
+FNDA:0,System.Collections.Generic.List`1<System.String> Basket.API.Infrastructure.Middlewares.FailingOptions::get_NotFilteredPaths()
+DA:10,0
+FN:6,System.Void Basket.API.Infrastructure.Middlewares.FailingOptions::.ctor()
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingOptions::.ctor()
+DA:7,0
+LF:3
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/FailingStartupFilter.cs
+FN:15,System.Action`1<Microsoft.AspNetCore.Builder.IApplicationBuilder> Basket.API.Infrastructure.Middlewares.FailingStartupFilter::Configure(System.Action`1<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
+FNDA:0,System.Action`1<Microsoft.AspNetCore.Builder.IApplicationBuilder> Basket.API.Infrastructure.Middlewares.FailingStartupFilter::Configure(System.Action`1<Microsoft.AspNetCore.Builder.IApplicationBuilder>)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+FN:9,System.Void Basket.API.Infrastructure.Middlewares.FailingStartupFilter::.ctor(System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+FNDA:0,System.Void Basket.API.Infrastructure.Middlewares.FailingStartupFilter::.ctor(System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Middlewares/FailingWebHostBuilderExtensions.cs
+FN:9,Microsoft.AspNetCore.Hosting.IWebHostBuilder Basket.API.Infrastructure.Middlewares.WebHostBuildertExtensions::UseFailing(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+FNDA:0,Microsoft.AspNetCore.Hosting.IWebHostBuilder Basket.API.Infrastructure.Middlewares.WebHostBuildertExtensions::UseFailing(Microsoft.AspNetCore.Hosting.IWebHostBuilder,System.Action`1<Basket.API.Infrastructure.Middlewares.FailingOptions>)
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/Exceptions/BasketDomainException.cs
+FN:9,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor()
+FNDA:0,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor()
+DA:10,0
+DA:11,0
+FN:13,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor(System.String)
+FNDA:0,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor(System.String)
+DA:14,0
+DA:15,0
+FN:17,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor(System.String,System.Exception)
+FNDA:0,System.Void Basket.API.Infrastructure.Exceptions.BasketDomainException::.ctor(System.String,System.Exception)
+DA:18,0
+DA:19,0
+LF:6
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Infrastructure/ActionResults/InternalServerErrorObjectResult.cs
+FN:8,System.Void Basket.API.Infrastructure.ActionResults.InternalServerErrorObjectResult::.ctor(System.Object)
+FNDA:0,System.Void Basket.API.Infrastructure.ActionResults.InternalServerErrorObjectResult::.ctor(System.Object)
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Controllers/BasketController.cs
+FN:25,System.Void Basket.API.Controllers.BasketController::.ctor(MediatR.IMediator,Basket.API.Assemblers.Interfaces.IBasketAssembler)
+FNDA:0,System.Void Basket.API.Controllers.BasketController::.ctor(MediatR.IMediator,Basket.API.Assemblers.Interfaces.IBasketAssembler)
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+FN:37,System.Void Basket.API.Controllers.BasketController/<GetBasketByIdAsync>d__3::MoveNext()
+FNDA:0,System.Void Basket.API.Controllers.BasketController/<GetBasketByIdAsync>d__3::MoveNext()
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+BRDA:39,68,0,0
+BRDA:39,68,1,0
+FN:49,System.Void Basket.API.Controllers.BasketController/<UpdateBasketAsync>d__4::MoveNext()
+FNDA:0,System.Void Basket.API.Controllers.BasketController/<UpdateBasketAsync>d__4::MoveNext()
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+BRDA:52,84,0,0
+BRDA:52,84,1,0
+FN:58,System.Void Basket.API.Controllers.BasketController/<DeleteBasketByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void Basket.API.Controllers.BasketController/<DeleteBasketByIdAsync>d__5::MoveNext()
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+BRDA:60,68,0,0
+BRDA:60,68,1,0
+FN:72,System.Void Basket.API.Controllers.BasketController/<CheckoutAsync>d__6::MoveNext()
+FNDA:0,System.Void Basket.API.Controllers.BasketController/<CheckoutAsync>d__6::MoveNext()
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:78,0
+DA:80,0
+DA:81,0
+DA:83,0
+DA:84,0
+BRDA:74,41,0,0
+BRDA:74,41,1,0
+BRDA:74,59,0,0
+BRDA:74,59,1,0
+BRDA:78,143,0,0
+BRDA:78,143,1,0
+BRDA:80,257,0,0
+BRDA:80,257,1,0
+LF:35
+LH:0
+BRF:14
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/Services/Basket/Basket.API/Assemblers/Implementations/BasketAssembler.cs
+FN:14,Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand Basket.API.Assemblers.Implementations.BasketAssembler::ToCommand(Basket.Domain.Contracts.BasketContract)
+FNDA:0,Basket.Domain.Commands.UpdateBasket.UpdateBasketCommand Basket.API.Assemblers.Implementations.BasketAssembler::ToCommand(Basket.Domain.Contracts.BasketContract)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+FN:23,Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand Basket.API.Assemblers.Implementations.BasketAssembler::ToCommand(Basket.API.Model.BasketCheckout)
+FNDA:0,Basket.Domain.Commands.CheckoutBasket.CheckoutBasketCommand Basket.API.Assemblers.Implementations.BasketAssembler::ToCommand(Basket.API.Model.BasketCheckout)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+LF:25
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBus/InMemoryEventBusSubscriptionsManager.cs
+FN:23,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::get_IsEmpty()
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::get_IsEmpty()
+DA:24,0
+FN:24,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::Clear()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::Clear()
+DA:25,0
+FN:28,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::AddDynamicSubscription(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::AddDynamicSubscription(System.String)
+DA:29,0
+DA:30,0
+DA:31,0
+FN:35,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::AddSubscription()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::AddSubscription()
+DA:36,0
+DA:37,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+BRDA:41,53,0,0
+BRDA:41,53,1,0
+FN:47,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoAddSubscription(System.Type,System.String,System.Boolean)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoAddSubscription(System.Type,System.String,System.Boolean)
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+BRDA:49,26,0,0
+BRDA:49,26,1,0
+BRDA:54,79,0,0
+BRDA:54,79,1,0
+BRDA:60,149,0,0
+BRDA:60,149,1,0
+FN:72,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RemoveDynamicSubscription(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RemoveDynamicSubscription(System.String)
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+FN:81,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RemoveSubscription()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RemoveSubscription()
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+FN:89,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoRemoveHandler(System.String,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoRemoveHandler(System.String,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo)
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:105,0
+DA:106,0
+BRDA:91,20,0,0
+BRDA:94,77,0,0
+BRDA:98,133,0,0
+BRDA:98,133,1,0
+BRDA:94,77,1,0
+BRDA:91,20,1,0
+FN:108,System.Collections.Generic.IEnumerable`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo> Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetHandlersForEvent()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo> Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetHandlersForEvent()
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+FN:112,System.Collections.Generic.IEnumerable`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo> Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetHandlersForEvent(System.String)
+FNDA:0,System.Collections.Generic.IEnumerable`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo> Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetHandlersForEvent(System.String)
+DA:113,0
+FN:115,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RaiseOnEventRemoved(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::RaiseOnEventRemoved(System.String)
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+BRDA:118,9,1,0
+BRDA:118,9,0,0
+FN:123,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::FindDynamicSubscriptionToRemove(System.String)
+FNDA:0,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::FindDynamicSubscriptionToRemove(System.String)
+DA:124,0
+DA:125,0
+DA:126,0
+FN:131,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::FindSubscriptionToRemove()
+FNDA:0,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::FindSubscriptionToRemove()
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+FN:137,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoFindSubscriptionToRemove(System.String,System.Type)
+FNDA:0,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::DoFindSubscriptionToRemove(System.String,System.Type)
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:144,0
+DA:146,0
+BRDA:139,26,0,0
+BRDA:139,26,1,0
+FN:148,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::HasSubscriptionsForEvent()
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::HasSubscriptionsForEvent()
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+FN:152,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::HasSubscriptionsForEvent(System.String)
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::HasSubscriptionsForEvent(System.String)
+DA:153,0
+FN:154,System.Type Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetEventTypeByName(System.String)
+FNDA:0,System.Type Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetEventTypeByName(System.String)
+DA:155,0
+FN:157,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetEventKey()
+FNDA:0,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::GetEventKey()
+DA:158,0
+DA:159,0
+DA:160,0
+FN:17,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::.ctor()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager::.ctor()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:91
+LH:0
+BRF:18
+BRH:0
+FNF:19
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBus/SubscriptionInfo.cs
+FN:8,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::get_IsDynamic()
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::get_IsDynamic()
+DA:9,0
+FN:9,System.Type Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::get_HandlerType()
+FNDA:0,System.Type Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::get_HandlerType()
+DA:10,0
+FN:18,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::Dynamic(System.Type)
+FNDA:0,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::Dynamic(System.Type)
+DA:19,0
+DA:20,0
+DA:21,0
+FN:22,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::Typed(System.Type)
+FNDA:0,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::Typed(System.Type)
+DA:23,0
+DA:24,0
+DA:25,0
+FN:11,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::.ctor(System.Boolean,System.Type)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.InMemoryEventBusSubscriptionsManager/SubscriptionInfo::.ctor(System.Boolean,System.Type)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBus/Extensions/GenericTypeExtensions.cs
+FN:10,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Extensions.GenericTypeExtensions::GetGenericTypeName(System.Type)
+FNDA:0,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Extensions.GenericTypeExtensions::GetGenericTypeName(System.Type)
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+BRDA:14,15,0,0
+BRDA:16,35,0,0
+BRDA:16,35,1,0
+BRDA:14,15,1,0
+FN:27,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Extensions.GenericTypeExtensions::GetGenericTypeName(System.Object)
+FNDA:0,System.String Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Extensions.GenericTypeExtensions::GetGenericTypeName(System.Object)
+DA:28,0
+DA:29,0
+DA:30,0
+LF:15
+LH:0
+BRF:4
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBus/Events/IntegrationEvent.cs
+FN:21,System.Guid Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::get_Id()
+FNDA:0,System.Guid Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::get_Id()
+DA:22,0
+FN:24,System.DateTime Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::get_CreationDate()
+FNDA:0,System.DateTime Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::get_CreationDate()
+DA:25,0
+FN:7,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::.ctor()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::.ctor()
+DA:8,0
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+FN:14,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::.ctor(System.Guid,System.DateTime)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent::.ctor(System.Guid,System.DateTime)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBusServiceBus/DefaultServiceBusPersisterConnection.cs
+FN:24,Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::get_ServiceBusConnectionStringBuilder()
+FNDA:0,Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::get_ServiceBusConnectionStringBuilder()
+DA:25,0
+FN:27,Microsoft.Azure.ServiceBus.ITopicClient Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::CreateModel()
+FNDA:0,Microsoft.Azure.ServiceBus.ITopicClient Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::CreateModel()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:34,0
+DA:35,0
+BRDA:29,14,0,0
+BRDA:29,14,1,0
+FN:37,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::Dispose()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::Dispose()
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+BRDA:39,9,1,0
+BRDA:39,9,0,0
+FN:14,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::.ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection>)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection::.ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.DefaultServiceBusPersisterConnection>)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+BRDA:18,11,0,0
+BRDA:18,11,1,0
+BRDA:20,33,0,0
+BRDA:20,33,1,0
+LF:20
+LH:0
+BRF:8
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBusServiceBus/EventBusServiceBus.cs
+FN:41,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Publish(Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Publish(Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent)
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+FN:62,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::SubscribeDynamic(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::SubscribeDynamic(System.String)
+DA:63,0
+DA:64,0
+DA:66,0
+DA:67,0
+FN:71,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Subscribe()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Subscribe()
+DA:72,0
+DA:73,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:92,0
+DA:94,0
+DA:95,0
+BRDA:76,50,0,0
+BRDA:76,50,1,0
+FN:99,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Unsubscribe()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Unsubscribe()
+DA:100,0
+DA:101,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:115,0
+DA:117,0
+DA:118,0
+FN:121,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::UnsubscribeDynamic(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::UnsubscribeDynamic(System.String)
+DA:122,0
+DA:123,0
+DA:125,0
+DA:126,0
+FN:128,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Dispose()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::Dispose()
+DA:129,0
+DA:130,0
+DA:131,0
+FN:133,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::RegisterSubscriptionClientMessageHandler()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::RegisterSubscriptionClientMessageHandler()
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+FN:150,System.Threading.Tasks.Task Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::ExceptionReceivedHandler(Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs)
+FNDA:0,System.Threading.Tasks.Task Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::ExceptionReceivedHandler(Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs)
+DA:151,0
+DA:152,0
+DA:153,0
+DA:155,0
+DA:157,0
+DA:158,0
+FN:193,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::RemoveDefaultRule()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::RemoveDefaultRule()
+DA:194,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:205,0
+DA:206,0
+FN:21,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::.ctor(Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.IServiceBusPersisterConnection,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus>,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.IEventBusSubscriptionsManager,System.String,Autofac.ILifetimeScope)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus::.ctor(Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.IServiceBusPersisterConnection,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus>,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.IEventBusSubscriptionsManager,System.String,Autofac.ILifetimeScope)
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+BRDA:30,29,0,0
+BRDA:30,29,1,0
+BRDA:31,51,0,0
+BRDA:31,51,1,0
+FN:160,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus/<ProcessEvent>d__16::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusServiceBus.EventBusServiceBus/<ProcessEvent>d__16::MoveNext()
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+DA:191,0
+BRDA:163,47,0,0
+BRDA:165,89,0,0
+BRDA:165,89,1,0
+BRDA:168,144,0,0
+BRDA:168,1140,1,0
+BRDA:170,200,0,0
+BRDA:173,252,1,0
+BRDA:175,281,1,0
+BRDA:175,281,0,0
+BRDA:175,353,1,0
+BRDA:175,353,0,0
+BRDA:175,459,1,0
+BRDA:175,459,0,0
+BRDA:175,520,1,0
+BRDA:175,520,0,0
+BRDA:175,598,0,0
+BRDA:175,631,0,0
+BRDA:175,631,1,0
+BRDA:168,144,1,0
+BRDA:175,598,1,0
+BRDA:175,716,1,0
+BRDA:175,716,0,0
+BRDA:170,200,1,0
+BRDA:180,857,1,0
+BRDA:184,1012,0,0
+BRDA:168,150,1,0
+BRDA:184,1012,1,0
+BRDA:168,150,0,0
+BRDA:173,252,0,0
+BRDA:180,857,0,0
+BRDA:168,1140,0,0
+BRDA:163,47,1,0
+LF:138
+LH:0
+BRF:48
+BRH:0
+FNF:11
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBusRabbitMQ/DefaultRabbitMQPersistentConnection.cs
+FN:33,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::get_IsConnected()
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::get_IsConnected()
+DA:34,0
+DA:35,0
+DA:36,0
+BRDA:35,7,0,0
+BRDA:35,20,0,0
+BRDA:35,7,1,0
+BRDA:35,20,1,0
+FN:39,RabbitMQ.Client.IModel Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::CreateModel()
+FNDA:0,RabbitMQ.Client.IModel Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::CreateModel()
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:46,0
+DA:47,0
+BRDA:41,12,0,0
+BRDA:41,12,1,0
+FN:49,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::Dispose()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::Dispose()
+DA:50,0
+DA:51,0
+DA:53,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+BRDA:51,9,1,0
+BRDA:51,9,0,0
+FN:65,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::TryConnect()
+FNDA:0,System.Boolean Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::TryConnect()
+DA:66,0
+DA:67,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:93,0
+DA:96,0
+DA:97,0
+DA:99,0
+DA:102,0
+BRDA:71,64,0,0
+BRDA:71,64,1,0
+BRDA:85,134,0,0
+BRDA:85,134,1,0
+FN:104,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnConnectionBlocked(System.Object,RabbitMQ.Client.Events.ConnectionBlockedEventArgs)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnConnectionBlocked(System.Object,RabbitMQ.Client.Events.ConnectionBlockedEventArgs)
+DA:105,0
+DA:106,0
+DA:108,0
+DA:110,0
+DA:111,0
+BRDA:106,9,1,0
+BRDA:106,9,0,0
+FN:113,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnCallbackException(System.Object,RabbitMQ.Client.Events.CallbackExceptionEventArgs)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnCallbackException(System.Object,RabbitMQ.Client.Events.CallbackExceptionEventArgs)
+DA:114,0
+DA:115,0
+DA:117,0
+DA:119,0
+DA:120,0
+BRDA:115,9,1,0
+BRDA:115,9,0,0
+FN:122,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnConnectionShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::OnConnectionShutdown(System.Object,RabbitMQ.Client.ShutdownEventArgs)
+DA:123,0
+DA:124,0
+DA:126,0
+DA:128,0
+DA:129,0
+BRDA:124,9,1,0
+BRDA:124,9,0,0
+FN:21,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::.ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection>,System.Int32)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection::.ctor(RabbitMQ.Client.IConnectionFactory,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.DefaultRabbitMQPersistentConnection>,System.Int32)
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+BRDA:26,22,0,0
+BRDA:26,22,1,0
+BRDA:27,44,0,0
+BRDA:27,44,1,0
+LF:69
+LH:0
+BRF:22
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/Users/ninjafx/microservices/eShopOnContainers/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs
+FN:48,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::SubsManager_OnEventRemoved(System.Object,System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::SubsManager_OnEventRemoved(System.Object,System.String)
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+BRDA:50,17,0,0
+BRDA:50,17,1,0
+BRDA:61,79,0,0
+BRDA:61,79,1,0
+FN:69,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Publish(Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Publish(Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Events.IntegrationEvent)
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:83,0
+DA:85,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:93,0
+DA:94,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+BRDA:71,37,0,0
+BRDA:71,37,1,0
+BRDA:76,75,0,0
+BRDA:76,75,1,0
+FN:114,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::SubscribeDynamic(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::SubscribeDynamic(System.String)
+DA:115,0
+DA:116,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+FN:125,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Subscribe()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Subscribe()
+DA:126,0
+DA:127,0
+DA:128,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+FN:136,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::DoInternalSubscription(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::DoInternalSubscription(System.String)
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+BRDA:139,20,0,0
+BRDA:141,39,0,0
+BRDA:141,39,1,0
+BRDA:139,20,1,0
+FN:157,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Unsubscribe()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Unsubscribe()
+DA:158,0
+DA:159,0
+DA:161,0
+DA:163,0
+DA:164,0
+FN:167,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::UnsubscribeDynamic(System.String)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::UnsubscribeDynamic(System.String)
+DA:168,0
+DA:169,0
+DA:170,0
+FN:172,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Dispose()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::Dispose()
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:179,0
+DA:180,0
+BRDA:174,12,0,0
+BRDA:174,12,1,0
+FN:182,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::StartBasicConsume()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::StartBasicConsume()
+DA:183,0
+DA:184,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:190,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:196,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+BRDA:186,34,0,0
+BRDA:186,34,1,0
+FN:228,RabbitMQ.Client.IModel Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::CreateConsumerChannel()
+FNDA:0,RabbitMQ.Client.IModel Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::CreateConsumerChannel()
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:235,0
+DA:237,0
+DA:239,0
+DA:240,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:245,0
+DA:246,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:255,0
+DA:257,0
+DA:258,0
+BRDA:230,17,0,0
+BRDA:230,17,1,0
+FN:34,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::.ctor(Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.IRabbitMQPersistentConnection,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ>,Autofac.ILifetimeScope,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.IEventBusSubscriptionsManager,System.String,System.Int32)
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ::.ctor(Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.IRabbitMQPersistentConnection,Microsoft.Extensions.Logging.ILogger`1<Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ>,Autofac.ILifetimeScope,Microsoft.eShopOnContainers.BuildingBlocks.EventBus.IEventBusSubscriptionsManager,System.String,System.Int32)
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+BRDA:38,11,0,0
+BRDA:38,11,1,0
+BRDA:39,33,0,0
+BRDA:39,33,1,0
+BRDA:40,56,0,0
+BRDA:40,56,1,0
+FN:203,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ/<Consumer_Received>d__19::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ/<Consumer_Received>d__19::MoveNext()
+DA:204,0
+DA:205,0
+DA:206,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:225,0
+DA:226,0
+BRDA:206,61,0,0
+BRDA:210,94,0,0
+BRDA:210,94,1,0
+BRDA:215,160,0,0
+BRDA:206,61,1,0
+BRDA:215,160,1,0
+FN:260,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ/<ProcessEvent>d__21::MoveNext()
+FNDA:0,System.Void Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ.EventBusRabbitMQ/<ProcessEvent>d__21::MoveNext()
+DA:261,0
+DA:262,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:273,0
+DA:274,0
+DA:275,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:295,0
+DA:296,0
+DA:297,0
+DA:298,0
+BRDA:264,77,0,0
+BRDA:266,113,0,0
+BRDA:266,113,1,0
+BRDA:269,1391,1,0
+BRDA:271,247,0,0
+BRDA:274,297,1,0
+BRDA:277,344,0,0
+BRDA:269,168,1,0
+BRDA:277,344,1,0
+BRDA:278,429,1,0
+BRDA:278,429,0,0
+BRDA:278,501,1,0
+BRDA:278,501,0,0
+BRDA:278,607,1,0
+BRDA:278,607,0,0
+BRDA:278,668,1,0
+BRDA:278,668,0,0
+BRDA:278,746,0,0
+BRDA:278,779,0,0
+BRDA:278,779,1,0
+BRDA:269,168,2,0
+BRDA:278,746,1,0
+BRDA:278,864,1,0
+BRDA:278,864,0,0
+BRDA:271,247,1,0
+BRDA:283,1005,1,0
+BRDA:288,1122,0,0
+BRDA:269,168,3,0
+BRDA:288,1122,1,0
+BRDA:289,1263,0,0
+BRDA:269,168,4,0
+BRDA:289,1263,1,0
+BRDA:269,168,0,0
+BRDA:274,297,0,0
+BRDA:283,1005,0,0
+BRDA:269,1391,0,0
+BRDA:264,77,1,0
+LF:195
+LH:0
+BRF:67
+BRH:0
+FNF:13
+FNH:0
+end_of_record

@@ -8,6 +8,7 @@ using Serilog;
 using System;
 using System.IO;
 using System.Net;
+using Basket.API;
 using Serilog.Formatting.Compact;
 using Serilog.Formatting.Elasticsearch;
 

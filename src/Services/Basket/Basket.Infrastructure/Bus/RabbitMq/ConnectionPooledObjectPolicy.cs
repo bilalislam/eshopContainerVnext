@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Sockets;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.ObjectPool;
@@ -8,6 +9,7 @@ using Polly;
 
 namespace Basket.Infrastructure.Bus.RabbitMq
 {
+    [ExcludeFromCodeCoverage]
     public class ConnectionPooledObjectPolicy : IPooledObjectPolicy<IConnection>
     {
         private readonly ILogger<ConnectionPooledObjectPolicy> _logger;

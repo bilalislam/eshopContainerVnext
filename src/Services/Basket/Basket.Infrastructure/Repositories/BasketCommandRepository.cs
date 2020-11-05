@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Domain.RepositoryInterfaces;
@@ -10,6 +11,7 @@ namespace Basket.Infrastructure.Repositories
     /// <summary>
     /// TODO: raise all events
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BasketCommandRepository : IBasketCommandRepository
     {
         private readonly ILogger<BasketQueryRepository> _logger;

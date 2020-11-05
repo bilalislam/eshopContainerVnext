@@ -1,18 +1,24 @@
-﻿using Basket.API.Infrastructure.Filters;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.IO;
+using System.Reflection;
+using Basket.API.Assemblers.Implementations;
+using Basket.API.Assemblers.Interfaces;
+using Basket.API.Controllers;
+using Basket.API.Infrastructure.Filters;
 using Basket.API.Infrastructure.Middlewares;
 using Basket.API.IntegrationEvents.EventHandling;
 using Basket.API.IntegrationEvents.Events;
+using Basket.Application;
+using GrpcBasket;
 using HealthChecks.UI.Client;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.ServiceBus;
-using Microsoft.eShopOnContainers.BuildingBlocks.EventBus;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Abstractions;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ;
-using Microsoft.eShopOnContainers.Services.Basket.API.Controllers;
 using Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories;
 using Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events;
 using Microsoft.eShopOnContainers.Services.Basket.API.Model;
@@ -21,26 +27,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using RabbitMQ.Client;
-using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.IO;
-using System.Reflection;
-using Basket.API.Assemblers.Implementations;
-using Basket.API.Assemblers.Interfaces;
-using Basket.API.Controllers;
-using Basket.Application;
-using GrpcBasket;
-using MediatR;
-using Microsoft.AspNetCore.Http.Features;
-using Microsoft.AspNetCore.Mvc;
-using Serilog;
 
-namespace Microsoft.eShopOnContainers.Services.Basket.API
+namespace Basket.API
 {
     public class Startup
     {
@@ -58,11 +48,6 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddScoped<IBasketAssembler, BasketAssembler>();
             services.AddMediatR(Assembly.Load("Basket.Application"));
             services.AddBasketApplicationComponents();
-            // services.AddApiVersioning(config =>
-            // {
-            //     config.DefaultApiVersion = new ApiVersion(1, 0);
-            //     config.AssumeDefaultVersionWhenUnspecified = true;
-            // });
 
 
             services.AddGrpc(options => { options.EnableDetailedErrors = true; });

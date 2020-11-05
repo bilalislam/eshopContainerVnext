@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Domain.RepositoryInterfaces;
@@ -7,6 +8,7 @@ using Newtonsoft.Json;
 
 namespace Basket.Infrastructure.Repositories
 {
+    [ExcludeFromCodeCoverage]
     public class BasketQueryRepository : IBasketQueryRepository
     {
         private readonly ILogger<BasketQueryRepository> _logger;
