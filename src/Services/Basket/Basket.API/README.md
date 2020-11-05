@@ -5,5 +5,10 @@ Powered by Microsoft
 Check procedures on how to get it started at the Wiki:
 https://github.com/dotnet/eShopOnContainers/wiki
 
-
+TODO
+1. consumers
+2. identity server setup
+3. grpc
+4. dockerize
+5. k8s
 
