@@ -41,7 +41,7 @@ namespace Basket.Application.UseCases.GetBasketById
                     ValidateState = ValidationState.DoesNotExist,
                     Messages = new[]
                     {
-                        new MessageContractDto
+                        new MessageContract
                         {
                             Title = $"Basket does not exists by {request.Id}"
                         }

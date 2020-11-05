@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 namespace Basket.Domain.Contracts
 {
     [ExcludeFromCodeCoverage]
-    public class MessageContractDto
+    public class MessageContract
     {
         public Guid Id { get; } = Guid.NewGuid();
         public string Code { get; set; }

@@ -14,7 +14,6 @@ using Microsoft.eShopOnContainers.BuildingBlocks.EventBus.Abstractions;
 using Microsoft.eShopOnContainers.BuildingBlocks.EventBusRabbitMQ;
 using Microsoft.eShopOnContainers.Services.Basket.API.Controllers;
 using Microsoft.eShopOnContainers.Services.Basket.API.Infrastructure.Repositories;
-using Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.EventHandling;
 using Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Events;
 using Microsoft.eShopOnContainers.Services.Basket.API.Model;
 using Microsoft.eShopOnContainers.Services.Basket.API.Services;
@@ -59,11 +58,11 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddScoped<IBasketAssembler, BasketAssembler>();
             services.AddMediatR(Assembly.Load("Basket.Application"));
             services.AddBasketApplicationComponents();
-            services.AddApiVersioning(config =>
-            {
-                config.DefaultApiVersion = new ApiVersion(1, 0);
-                config.AssumeDefaultVersionWhenUnspecified = true;
-            });
+            // services.AddApiVersioning(config =>
+            // {
+            //     config.DefaultApiVersion = new ApiVersion(1, 0);
+            //     config.AssumeDefaultVersionWhenUnspecified = true;
+            // });
 
 
             services.AddGrpc(options => { options.EnableDetailedErrors = true; });

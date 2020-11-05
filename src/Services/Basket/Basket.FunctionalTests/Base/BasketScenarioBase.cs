@@ -13,14 +13,14 @@ namespace Basket.FunctionalTests.Base
         public TestServer CreateServer()
         {
             var path = Assembly.GetAssembly(typeof(BasketScenarioBase))
-               .Location;
+                .Location;
 
             var hostBuilder = new WebHostBuilder()
                 .UseContentRoot(Path.GetDirectoryName(path))
                 .ConfigureAppConfiguration(cb =>
                 {
                     cb.AddJsonFile("appsettings.json", optional: false)
-                    .AddEnvironmentVariables();
+                        .AddEnvironmentVariables();
                 }).UseStartup<BasketTestsStartup>();
 
             return new TestServer(hostBuilder);
@@ -38,6 +38,14 @@ namespace Basket.FunctionalTests.Base
         {
             public static string Basket = $"{ApiUrlBase}/";
             public static string CheckoutOrder = $"{ApiUrlBase}/checkout";
+        }
+
+        public static class Delete
+        {
+            public static string DeleteBasket(string id)
+            {
+                return $"{ApiUrlBase}/{id}";
+            }
         }
     }
 }

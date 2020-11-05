@@ -4,6 +4,9 @@ using System.Net.Http;
 
 namespace Basket.FunctionalTests.Base
 {
+    /// <summary>
+    /// 
+    /// </summary>
     static class HttpClientExtensions
     {
         public static HttpClient CreateIdempotentClient(this TestServer server)

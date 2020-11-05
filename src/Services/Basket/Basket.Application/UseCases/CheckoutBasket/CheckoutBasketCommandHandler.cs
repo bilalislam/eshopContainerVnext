@@ -65,8 +65,18 @@ namespace Basket.Application.UseCases.CheckoutBasket
                 _basketAssembler.ToContract(basket));
 
 
-            await _eventBus.PublishMessageAsync(userCheckoutAcceptedIntegrationEvent, "eshopContainers", "topic",
+            var isPublished = await _eventBus.PublishMessageAsync(userCheckoutAcceptedIntegrationEvent,
+                "eshopContainers", "topic",
                 nameof(userCheckoutAcceptedIntegrationEvent));
+
+            if (!isPublished)
+            {
+                return new CheckoutBasketCommandResult()
+                {
+                    ValidateState = ValidationState.UnProcessable,
+                    ReturnPath = "/basket"
+                };
+            }
 
             return new CheckoutBasketCommandResult()
             {
