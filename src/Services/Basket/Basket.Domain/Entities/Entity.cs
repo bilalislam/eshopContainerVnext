@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Basket.Domain.Entities
 {
@@ -7,6 +8,7 @@ namespace Basket.Domain.Entities
     /// <summary>
     ///  Source: https://github.com/VaughnVernon/IDDD_Samples_NET
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public abstract class EntityBase<TId> : IIdentity<TId>
     {
         protected EntityBase()
@@ -22,7 +24,7 @@ namespace Basket.Domain.Entities
         public DateTime Created { get; private set; }
 
         public DateTime? Updated { get; private set; }
-        
+
         // It must be public because of not moved from derived class. impedance mismatch :(
         [Key] public TId Id { get; set; }
     }

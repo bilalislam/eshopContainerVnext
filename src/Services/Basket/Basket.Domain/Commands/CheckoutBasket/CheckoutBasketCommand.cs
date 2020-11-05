@@ -1,9 +1,11 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using Basket.Domain.Commands.DeleteBasket;
 using MediatR;
 
 namespace Basket.Domain.Commands.CheckoutBasket
 {
+    [ExcludeFromCodeCoverage]
     public class CheckoutBasketCommand : IRequest<CheckoutBasketCommandResult>
     {
         public string City { get; set; }

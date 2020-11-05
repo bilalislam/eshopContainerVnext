@@ -5,7 +5,7 @@ namespace Basket.Domain.RepositoryInterfaces
 {
     public interface IBasketCommandRepository
     {
-        Task SaveAsync(Aggregates.Basket basket, CancellationToken cancellationToken);
-        Task DeleteAsync(string buyerId, CancellationToken cancellationToken);
+        Task<bool> SaveAsync(Aggregates.Basket basket, CancellationToken cancellationToken);
+        Task<bool> DeleteAsync(string buyerId, CancellationToken cancellationToken);
     }
 }

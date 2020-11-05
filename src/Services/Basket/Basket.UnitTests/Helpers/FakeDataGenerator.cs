@@ -9,7 +9,7 @@ namespace Basket.UnitTests.Helpers
     {
         private static readonly Faker Faker = new Faker();
 
-        public static UpdateBasketCommand CreateBasket()
+        public static UpdateBasketCommand CreateBasketCommand()
         {
             return new UpdateBasketCommand()
             {
@@ -35,7 +35,7 @@ namespace Basket.UnitTests.Helpers
             };
         }
 
-        public static BasketItemContract CreateProduct()
+        public static BasketItemContract CreateBasketItemContract()
         {
             return new BasketItemContract()
             {
@@ -52,6 +52,24 @@ namespace Basket.UnitTests.Helpers
                     Amount = Faker.Random.Decimal(1)
                 },
             };
+        }
+
+        public static BasketContract CreateBasketContract()
+        {
+            return new BasketContract()
+            {
+                Id = Faker.Random.Guid(),
+                BuyerId = Faker.Random.String(),
+                BasketItems = new[]
+                {
+                    CreateBasketItemContract()
+                }
+            };
+        }
+
+        public static Domain.Aggregates.Basket CreateBasket()
+        {
+            return Domain.Aggregates.Basket.Load(CreateBasketCommand());
         }
     }
 }

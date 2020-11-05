@@ -1,7 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+using Basket.Domain.Commands.GetBasketById;
+
 namespace Basket.Domain.Commands.CheckoutBasket
 {
-    public class CheckoutBasketCommandResult
+    [ExcludeFromCodeCoverage]
+    public class CheckoutBasketCommandResult : CommandResultBase
     {
-        public bool Success { get; set; } = true;
     }
 }

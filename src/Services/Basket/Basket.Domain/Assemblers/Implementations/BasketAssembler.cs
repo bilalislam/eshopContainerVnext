@@ -1,8 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Basket.Domain.Assemblers.Interfaces;
 
 namespace Basket.Domain.Assemblers.Implementations
 {
+    [ExcludeFromCodeCoverage]
     public class BasketAssembler : IBasketAssembler
     {
         private readonly IBasketItemAssembler _basketItemAssembler;

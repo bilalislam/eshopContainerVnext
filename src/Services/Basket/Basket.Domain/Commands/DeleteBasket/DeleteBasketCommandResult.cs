@@ -1,6 +1,10 @@
+using System.Diagnostics.CodeAnalysis;
+using Basket.Domain.Commands.GetBasketById;
+
 namespace Basket.Domain.Commands.DeleteBasket
 {
-    public class DeleteBasketCommandResult
+    [ExcludeFromCodeCoverage]
+    public class DeleteBasketCommandResult : CommandResultBase
     {
     }
 }

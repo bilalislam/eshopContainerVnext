@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Basket.Domain.Assemblers.Interfaces;
+using Basket.Domain.Commands;
 using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.RepositoryInterfaces;
 using MediatR;
@@ -12,8 +13,8 @@ namespace Basket.Application.UseCases.UpdateBasket
         private readonly IBasketAssembler _basketAssembler;
         private readonly IBasketCommandRepository _basketCommandRepository;
 
-        public UpdateBasketCommandHandler(IBasketCommandRepository basketCommandRepository,
-            IBasketAssembler basketAssembler)
+        public UpdateBasketCommandHandler(IBasketAssembler basketAssembler,
+            IBasketCommandRepository basketCommandRepository)
         {
             _basketCommandRepository = basketCommandRepository;
             _basketAssembler = basketAssembler;
@@ -30,15 +31,33 @@ namespace Basket.Application.UseCases.UpdateBasket
         public async Task<UpdateBasketCommandResult> Handle(UpdateBasketCommand request,
             CancellationToken cancellationToken)
         {
+            if (request == null)
+            {
+                return new UpdateBasketCommandResult()
+                {
+                    ValidateState = ValidationState.NotAcceptable,
+                    ReturnPath = "/basket"
+                };
+            }
+
             var basket = Domain.Aggregates.Basket
                 .Load(request)
                 .AddCartItem(request.Items);
 
-            await _basketCommandRepository.SaveAsync(basket, cancellationToken);
+            var isUpdated = await _basketCommandRepository.SaveAsync(basket, cancellationToken);
+            if (!isUpdated)
+            {
+                return new UpdateBasketCommandResult()
+                {
+                    ValidateState = ValidationState.DoesNotExist,
+                    ReturnPath = "/basket"
+                };
+            }
 
             return new UpdateBasketCommandResult()
             {
-                Basket = _basketAssembler.ToContract(basket)
+                Basket = _basketAssembler.ToContract(basket),
+                ValidateState = ValidationState.Valid
             };
         }
     }

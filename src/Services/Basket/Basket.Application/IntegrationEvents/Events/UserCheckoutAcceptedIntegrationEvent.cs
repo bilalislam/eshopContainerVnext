@@ -1,9 +1,11 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using Basket.Domain.Contracts;
 using Basket.Domain.Events;
 
 namespace Basket.Application.IntegrationEvents.Events
 {
+    [ExcludeFromCodeCoverage]
     public class UserCheckoutAcceptedIntegrationEvent : EventBase
     {
         public string UserId { get; }
@@ -37,7 +39,6 @@ namespace Basket.Application.IntegrationEvents.Events
         public BasketContract Basket { get; }
 
 
-        
         public UserCheckoutAcceptedIntegrationEvent(string userId, string userName, string city, string street,
             string state, string country, string zipCode, string cardNumber, string cardHolderName,
             DateTime cardExpiration, string cardSecurityNumber, int cardTypeId, string buyer, Guid requestId,

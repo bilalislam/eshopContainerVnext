@@ -2,6 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Basket.Application.IntegrationEvents.Events;
 using Basket.Domain.Assemblers.Interfaces;
+using Basket.Domain.Commands;
 using Basket.Domain.Commands.CheckoutBasket;
 using Basket.Domain.Commands.DeleteBasket;
 using Basket.Domain.RepositoryInterfaces;
@@ -37,9 +38,14 @@ namespace Basket.Application.UseCases.CheckoutBasket
             CancellationToken cancellationToken)
         {
             var basket = await _basketQueryRepository.GetBasketAsync(request.BuyerId, cancellationToken);
-
             if (basket == null)
-                return null;
+            {
+                return new CheckoutBasketCommandResult()
+                {
+                    ValidateState = ValidationState.DoesNotExist,
+                    ReturnPath = "/basket"
+                };
+            }
 
             var userCheckoutAcceptedIntegrationEvent = new UserCheckoutAcceptedIntegrationEvent(
                 request.BuyerId,
@@ -61,7 +67,11 @@ namespace Basket.Application.UseCases.CheckoutBasket
 
             await _eventBus.PublishMessageAsync(userCheckoutAcceptedIntegrationEvent, "eshopContainers", "topic",
                 nameof(userCheckoutAcceptedIntegrationEvent));
-            return new CheckoutBasketCommandResult();
+
+            return new CheckoutBasketCommandResult()
+            {
+                ValidateState = ValidationState.Valid
+            };
         }
     }
 }
