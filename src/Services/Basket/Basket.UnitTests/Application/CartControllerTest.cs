@@ -13,7 +13,7 @@
 // namespace UnitTest.Basket.Application
 // {
 //     /// <summary>
-//     /// Bu aslında burası test pyramid de UI'in  Integration testi ve api için contract test yazılması gerekirdi. 
+//     /// Bu aslında test pyramid de UI'in  Integration testi ve api için contract test yazılması gerekirdi. 
 //     /// </summary>
 //     public class CartControllerTest
 //     {
