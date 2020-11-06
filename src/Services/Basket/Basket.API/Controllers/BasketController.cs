@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Basket.API.Assemblers.Interfaces;
 using Basket.API.Model;
+using Basket.Domain.Commands;
 using Basket.Domain.Commands.DeleteBasket;
 using Basket.Domain.Commands.GetBasketById;
 using Basket.Domain.Commands.UpdateBasket;
@@ -42,6 +43,12 @@ namespace Basket.API.Controllers
             return Ok(getBasketIdCommandResult);
         }
 
+        /// <summary>
+        /// TODO : use to the CustomerBasket as model 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(typeof(UpdateBasketCommandResult), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<CustomerBasket>> UpdateBasketAsync([FromBody] BasketContract value,
@@ -76,7 +83,7 @@ namespace Basket.API.Controllers
 
             var result = await _mediator.Send(_basketAssembler.ToCommand(basketCheckout), cancellationToken);
 
-            if (result == null)
+            if (result.ValidateState != ValidationState.Valid)
                 return BadRequest();
 
             return Accepted();

@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using Basket.API.Model;
+using Basket.Domain.Commands.CheckoutBasket;
 using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using Bogus;
@@ -56,12 +59,12 @@ namespace Basket.UnitTests.Helpers
             };
         }
 
-        public static BasketContract CreateBasketContract()
+        public static BasketContract CreateBasketContract(string id = "1")
         {
             return new BasketContract()
             {
                 Id = Faker.Random.Guid(),
-                BuyerId = Faker.Random.String(),
+                BuyerId = id,
                 BasketItems = new[]
                 {
                     CreateBasketItemContract()
@@ -72,6 +75,26 @@ namespace Basket.UnitTests.Helpers
         public static Domain.Aggregates.Basket CreateBasket()
         {
             return Domain.Aggregates.Basket.Load(CreateBasketCommand());
+        }
+
+        public static BasketCheckout CreateBasketCheckout(string id)
+        {
+            return new BasketCheckout()
+            {
+                Buyer = "bilal",
+                City = "Istanbul",
+                Country = "Turkiye",
+                State = "Umraniye",
+                Street = "Talatpasa cad.",
+                BuyerId = id,
+                CardExpiration = DateTime.Today,
+                CardNumber = "1231232123123",
+                RequestId = Guid.NewGuid(),
+                ZipCode = "34704",
+                CardHolderName = "bilal islam",
+                CardSecurityNumber = "821",
+                CardTypeId = 1
+            };
         }
     }
 }

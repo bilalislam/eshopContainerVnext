@@ -79,7 +79,7 @@ namespace Basket.UnitTests.Application
                 .ReturnsAsync(FakeDataGenerator.CreateBasket);
 
             _mockBasketAssembler.Setup(x => x.ToContract(FakeDataGenerator.CreateBasket()))
-                .Returns(FakeDataGenerator.CreateBasketContract);
+                .Returns(FakeDataGenerator.CreateBasketContract());
 
             var command = new GetBasketByIdCommandHandler(_mockBasketAssembler.Object, _mockBasketQueryRepository.Object);
 
