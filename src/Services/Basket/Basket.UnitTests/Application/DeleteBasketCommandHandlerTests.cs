@@ -12,12 +12,24 @@ namespace Basket.UnitTests.Application
     [TestFixture]
     public class DeleteBasketCommandHandlerTests
     {
+        private Mock<IBasketCommandRepository> _mockBasketCommandRepository;
+
+        [SetUp]
+        public void Init()
+        {
+            _mockBasketCommandRepository = new Mock<IBasketCommandRepository>();
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            _mockBasketCommandRepository.Reset();
+        }
+
         [Test]
         public async Task Handle_ShouldReturnInvalid_WhenRequestIsNull()
         {
-            //Arrange
-            var mockBasketCommandRepository = new Mock<IBasketCommandRepository>();
-            var command = new DeleteBasketCommandHandler(mockBasketCommandRepository.Object);
+            var command = new DeleteBasketCommandHandler(_mockBasketCommandRepository.Object);
 
             //Act
             var result = await command.Handle(It.IsAny<DeleteBasketCommand>(), It.IsAny<CancellationToken>());
@@ -32,14 +44,12 @@ namespace Basket.UnitTests.Application
         public async Task Handle_ShouldReturnInValid_WhenBasketDoesNotExists()
         {
             //Arrange
-            var mockBasketCommandRepository = new Mock<IBasketCommandRepository>();
-            var command = new DeleteBasketCommandHandler(mockBasketCommandRepository.Object);
-
+            var command = new DeleteBasketCommandHandler(_mockBasketCommandRepository.Object);
             DeleteBasketCommand deleteBasketCommand = new DeleteBasketCommand()
             {
                 BuyerId = "1"
             };
-            mockBasketCommandRepository.Setup(x => x.DeleteAsync(It.IsAny<string>(), CancellationToken.None))
+            _mockBasketCommandRepository.Setup(x => x.DeleteAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync(false);
 
             //Act
@@ -55,14 +65,12 @@ namespace Basket.UnitTests.Application
         public async Task Handle_ShouldReturnValid_WhenBasketDeleted()
         {
             //Arrange
-            var mockBasketCommandRepository = new Mock<IBasketCommandRepository>();
-            var command = new DeleteBasketCommandHandler(mockBasketCommandRepository.Object);
-
+            var command = new DeleteBasketCommandHandler(_mockBasketCommandRepository.Object);
             DeleteBasketCommand deleteBasketCommand = new DeleteBasketCommand()
             {
                 BuyerId = "1"
             };
-            mockBasketCommandRepository.Setup(x => x.DeleteAsync(It.IsAny<string>(), CancellationToken.None))
+            _mockBasketCommandRepository.Setup(x => x.DeleteAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync(true);
 
             //Act

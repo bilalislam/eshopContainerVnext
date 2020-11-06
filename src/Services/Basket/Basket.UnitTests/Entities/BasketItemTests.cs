@@ -1,8 +1,11 @@
 using System;
+using Basket.Domain.Contracts;
 using Basket.Domain.ErrorCodes;
 using Basket.Domain.Exceptions;
+using Basket.Domain.RepositoryInterfaces;
 using Basket.UnitTests.Helpers;
 using FluentAssertions;
+using Moq;
 using NUnit.Framework;
 
 namespace Basket.UnitTests.Entities
@@ -10,6 +13,21 @@ namespace Basket.UnitTests.Entities
     [TestFixture]
     public class BasketItemTests
     {
+        private BasketItemContract _basketItem;
+
+        [SetUp]
+        public void Init()
+        {
+            _basketItem = FakeDataGenerator.CreateBasketItemContract();
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            _basketItem = null;
+        }
+
+
         [Test]
         public void Load_ShouldThrowException_WhenDomainDtoIsNull()
         {
@@ -23,10 +41,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductIdEqualThanZero()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.ProductId = 0;
+            _basketItem.ProductId = 0;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1009));
         }
@@ -35,10 +52,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductIdLessThanZero()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.ProductId = -1;
+            _basketItem.ProductId = -1;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1009));
         }
@@ -47,10 +63,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductNameIsNullOrEmpty()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.ProductName = string.Empty;
+            _basketItem.ProductName = string.Empty;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1005));
         }
@@ -59,10 +74,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductQuantityEqualToZero()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.Quantity = 0;
+            _basketItem.Quantity = 0;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1006));
         }
@@ -71,10 +85,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductQuantityLessThanZero()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.Quantity = -1;
+            _basketItem.Quantity = -1;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1006));
         }
@@ -83,10 +96,9 @@ namespace Basket.UnitTests.Entities
         public void Load_ShouldThrowException_WhenProductUrlNullOrEmpty()
         {
             //Arrange
-            var basketItem = FakeDataGenerator.CreateBasketItemContract();
-            basketItem.PictureUrl = String.Empty;
+            _basketItem.PictureUrl = String.Empty;
             // Act
-            Action basket = () => { Domain.Entities.BasketItem.Load(basketItem); };
+            Action basket = () => { Domain.Entities.BasketItem.Load(_basketItem); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1007));
         }

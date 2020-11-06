@@ -14,13 +14,30 @@ namespace Basket.UnitTests.Application
     [TestFixture]
     public class GetBasketByIdCommandHandlerTests
     {
+        private Mock<IBasketAssembler> _mockBasketAssembler;
+        private Mock<IBasketQueryRepository> _mockBasketQueryRepository;
+
+
+        [SetUp]
+        public void Init()
+        {
+            _mockBasketAssembler = new Mock<IBasketAssembler>();
+            _mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            _mockBasketAssembler.Reset();
+            _mockBasketQueryRepository.Reset();
+        }
+
         [Test]
         public async Task Handle_ShouldReturnInvalid_WhenRequestIsNull()
         {
             //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-            var command = new GetBasketByIdCommandHandler(mockBasketAssembler.Object, mockBasketQueryRepository.Object);
+            var command =
+                new GetBasketByIdCommandHandler(_mockBasketAssembler.Object, _mockBasketQueryRepository.Object);
 
             //Act
             var result = await command.Handle(It.IsAny<GetBasketByIdCommand>(), It.IsAny<CancellationToken>());
@@ -35,12 +52,11 @@ namespace Basket.UnitTests.Application
         public async Task Handle_ShouldReturnInvalid_WhenBasketDoesNotExists()
         {
             //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-            mockBasketQueryRepository.Setup(x => x.GetBasketAsync(It.IsAny<string>(), CancellationToken.None))
+            _mockBasketQueryRepository.Setup(x => x.GetBasketAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync((Domain.Aggregates.Basket) (null));
 
-            var command = new GetBasketByIdCommandHandler(mockBasketAssembler.Object, mockBasketQueryRepository.Object);
+            var command =
+                new GetBasketByIdCommandHandler(_mockBasketAssembler.Object, _mockBasketQueryRepository.Object);
 
             //Act
             var result = await command.Handle(new GetBasketByIdCommand()
@@ -58,17 +74,14 @@ namespace Basket.UnitTests.Application
         public async Task Handle_ShouldReturnValid_WhenBasketExists()
         {
             //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-
             string basketId = "1";
-            mockBasketQueryRepository.Setup(x => x.GetBasketAsync(basketId, It.IsAny<CancellationToken>()))
+            _mockBasketQueryRepository.Setup(x => x.GetBasketAsync(basketId, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(FakeDataGenerator.CreateBasket);
 
-            mockBasketAssembler.Setup(x => x.ToContract(FakeDataGenerator.CreateBasket()))
+            _mockBasketAssembler.Setup(x => x.ToContract(FakeDataGenerator.CreateBasket()))
                 .Returns(FakeDataGenerator.CreateBasketContract);
 
-            var command = new GetBasketByIdCommandHandler(mockBasketAssembler.Object, mockBasketQueryRepository.Object);
+            var command = new GetBasketByIdCommandHandler(_mockBasketAssembler.Object, _mockBasketQueryRepository.Object);
 
             //Act
             var result = await command.Handle(new GetBasketByIdCommand()

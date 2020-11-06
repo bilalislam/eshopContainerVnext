@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Basket.API.Model;
 using Basket.Domain.Contracts;
 
 namespace Basket.FunctionalTests.Helpers
 {
+    [ExcludeFromCodeCoverage]
     public static class FakeDataGenerator
     {
         public static BasketCheckout CreateBasketCheckout(string id)

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
+using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using Basket.Domain.ErrorCodes;
 using Basket.Domain.Events;
@@ -15,6 +15,21 @@ namespace Basket.UnitTests.Aggregates
     [TestFixture]
     public class BasketTests
     {
+        private UpdateBasketCommand _updateBasketCommand;
+
+        [SetUp]
+        public void Init()
+        {
+            _updateBasketCommand = FakeDataGenerator.CreateBasketCommand();
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            _updateBasketCommand = null;
+        }
+
+
         [Test]
         public void Load_ShouldThrowException_WhenDomainDtoIsNull()
         {
@@ -28,11 +43,10 @@ namespace Basket.UnitTests.Aggregates
         public void Load_ShouldThrowException_WhenBuyerIsNull()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.CreateBasketCommand();
-            updateBasketCommand.BuyerId = null;
+            _updateBasketCommand.BuyerId = null;
 
             // Act
-            Action basket = () => { Domain.Aggregates.Basket.Load(updateBasketCommand); };
+            Action basket = () => { Domain.Aggregates.Basket.Load(_updateBasketCommand); };
             // Assert
             basket.Should().Throw<DomainException>().And.Code.Should().Be(nameof(DomainErrorCodes.EDBasket1001));
         }
@@ -40,11 +54,8 @@ namespace Basket.UnitTests.Aggregates
         [Test]
         public void Load_ShouldCreateBasket_WhenBasketDoesValid()
         {
-            //Arrange
-            var updateBasketCommand = FakeDataGenerator.CreateBasketCommand();
-
             // Act
-            var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
+            var basket = Domain.Aggregates.Basket.Load(_updateBasketCommand);
 
             // Assert
             basket.GetUncommittedEvents().First().Should().BeOfType<BasketCreated>();
@@ -54,14 +65,13 @@ namespace Basket.UnitTests.Aggregates
         public void AddCartItem_ShouldThrowException_WhenBasketItemsNullOrEmpty()
         {
             //Arrange
-            var updateBasketCommand = FakeDataGenerator.CreateBasketCommand();
-            updateBasketCommand.Items = null;
+            _updateBasketCommand.Items = null;
 
             // Act
             Action basket = () =>
             {
-                Domain.Aggregates.Basket.Load(updateBasketCommand)
-                    .AddCartItem(updateBasketCommand.Items);
+                Domain.Aggregates.Basket.Load(_updateBasketCommand)
+                    .AddCartItem(_updateBasketCommand.Items);
             };
 
             // Assert
@@ -71,11 +81,8 @@ namespace Basket.UnitTests.Aggregates
         [Test]
         public void AddCartItem_ShouldAddProductsToBasket_WhenBasketItemsAreValid()
         {
-            //Arrange
-            var updateBasketCommand = FakeDataGenerator.CreateBasketCommand();
-
             // Act
-            var basket = Domain.Aggregates.Basket.Load(updateBasketCommand);
+            var basket = Domain.Aggregates.Basket.Load(_updateBasketCommand);
 
             basket.AddCartItem(new List<BasketItemContract>()
             {

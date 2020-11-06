@@ -16,18 +16,35 @@ namespace Basket.UnitTests.Application
     [TestFixture]
     public class CheckoutBasketCommandHandlerTests
     {
+        private Mock<IBasketAssembler> _mockBasketAssembler;
+        private Mock<IBasketQueryRepository> _mockBasketQueryRepository;
+        private Mock<IEventBus> _mockEventBus;
+
+
+        [SetUp]
+        public void Init()
+        {
+            _mockBasketAssembler = new Mock<IBasketAssembler>();
+            _mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
+            _mockEventBus = new Mock<IEventBus>();
+        }
+
+        [TearDown]
+        public void Dispose()
+        {
+            _mockBasketAssembler.Reset();
+            _mockBasketQueryRepository.Reset();
+            _mockEventBus.Reset();
+        }
+
         [Test]
         public async Task Handle_ShouldReturnInvalid_WhenBasketDoesNotExists()
         {
-            //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-            var mockEventBus = new Mock<IEventBus>();
+            var command = new CheckoutBasketCommandHandler(_mockBasketQueryRepository.Object,
+                _mockBasketAssembler.Object,
+                _mockEventBus.Object);
 
-            var command = new CheckoutBasketCommandHandler(mockBasketQueryRepository.Object, mockBasketAssembler.Object,
-                mockEventBus.Object);
-
-            mockBasketQueryRepository.Setup(x =>
+            _mockBasketQueryRepository.Setup(x =>
                     x.GetBasketAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync((Domain.Aggregates.Basket) null);
 
@@ -46,19 +63,15 @@ namespace Basket.UnitTests.Application
         [Test]
         public async Task Handle_ShouldReturnInvalid_WhenCanNotPublishedMessage()
         {
-            //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-            var mockEventBus = new Mock<IEventBus>();
+            var command = new CheckoutBasketCommandHandler(_mockBasketQueryRepository.Object,
+                _mockBasketAssembler.Object,
+                _mockEventBus.Object);
 
-            var command = new CheckoutBasketCommandHandler(mockBasketQueryRepository.Object, mockBasketAssembler.Object,
-                mockEventBus.Object);
-
-            mockBasketQueryRepository.Setup(x =>
+            _mockBasketQueryRepository.Setup(x =>
                     x.GetBasketAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync(FakeDataGenerator.CreateBasket);
 
-            mockEventBus.Setup(x => x.PublishMessageAsync(
+            _mockEventBus.Setup(x => x.PublishMessageAsync(
                     It.IsAny<UserCheckoutAcceptedIntegrationEvent>(),
                     It.IsAny<string>(),
                     It.IsAny<string>(),
@@ -80,19 +93,15 @@ namespace Basket.UnitTests.Application
         [Test]
         public async Task Handle_ShouldReturnValid_WhenPublishedMessage()
         {
-            //Arrange
-            var mockBasketAssembler = new Mock<IBasketAssembler>();
-            var mockBasketQueryRepository = new Mock<IBasketQueryRepository>();
-            var mockEventBus = new Mock<IEventBus>();
+            var command = new CheckoutBasketCommandHandler(_mockBasketQueryRepository.Object,
+                _mockBasketAssembler.Object,
+                _mockEventBus.Object);
 
-            var command = new CheckoutBasketCommandHandler(mockBasketQueryRepository.Object, mockBasketAssembler.Object,
-                mockEventBus.Object);
-
-            mockBasketQueryRepository.Setup(x =>
+            _mockBasketQueryRepository.Setup(x =>
                     x.GetBasketAsync(It.IsAny<string>(), CancellationToken.None))
                 .ReturnsAsync(FakeDataGenerator.CreateBasket);
 
-            mockEventBus.Setup(x => x.PublishMessageAsync(
+            _mockEventBus.Setup(x => x.PublishMessageAsync(
                     It.IsAny<UserCheckoutAcceptedIntegrationEvent>(),
                     It.IsAny<string>(),
                     It.IsAny<string>(),

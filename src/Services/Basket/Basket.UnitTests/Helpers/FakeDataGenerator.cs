@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using Basket.Domain.Commands.UpdateBasket;
 using Basket.Domain.Contracts;
 using Bogus;
 
 namespace Basket.UnitTests.Helpers
 {
+    [ExcludeFromCodeCoverage]
     public static class FakeDataGenerator
     {
         private static readonly Faker Faker = new Faker();
