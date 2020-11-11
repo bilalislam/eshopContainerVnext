@@ -23,6 +23,12 @@ namespace Basket.API.IntegrationEvents.EventHandling
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
 
+        /// <summary>
+        /// this is bad design !
+        /// TODO : it should be fetch source of truth. Or Graph db search.
+        /// </summary>
+        /// <param name="event"></param>
+        /// <returns></returns>
         public async Task Handle(ProductPriceChangedIntegrationEvent @event)
         {
             using (LogContext.PushProperty("IntegrationEventContext", $"{@event.Id}-{Program.AppName}"))

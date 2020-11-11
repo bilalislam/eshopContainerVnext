@@ -44,7 +44,6 @@ namespace Basket.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //TODO : must be generic register
             services.AddScoped<IBasketAssembler, BasketAssembler>();
             services.AddMediatR(Assembly.Load("Basket.Application"));
             services.AddBasketApplicationComponents();
@@ -95,41 +94,6 @@ namespace Basket.API
 
             services.AddCustomHealthCheck(Configuration);
 
-            //services.Configure<BasketSettings>(Configuration);
-
-            services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
-            {
-                var logger = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
-
-                var factory = new ConnectionFactory()
-                {
-                    HostName = Configuration["EventBusConnection"],
-                    DispatchConsumersAsync = true
-                };
-
-                if (!string.IsNullOrEmpty(Configuration["EventBusUserName"]))
-                {
-                    factory.UserName = Configuration["EventBusUserName"];
-                }
-
-                if (!string.IsNullOrEmpty(Configuration["EventBusPassword"]))
-                {
-                    factory.Password = Configuration["EventBusPassword"];
-                }
-
-                var retryCount = 5;
-                if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
-                {
-                    retryCount = int.Parse(Configuration["EventBusRetryCount"]);
-                }
-
-                return new DefaultRabbitMQPersistentConnection(factory, logger, retryCount);
-            });
-
-
-            //RegisterEventBus(services);
-
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -149,9 +113,6 @@ namespace Basket.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            //loggerFactory.AddAzureWebAppDiagnostics();
-            //loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Trace);
-
             var pathBase = Configuration["PATH_BASE"];
             if (!string.IsNullOrEmpty(pathBase))
             {
@@ -204,14 +165,6 @@ namespace Basket.API
                     Predicate = r => r.Name.Contains("self")
                 });
             });
-
-            //sConfigureEventBus(app);
-        }
-
-        private void RegisterAppInsights(IServiceCollection services)
-        {
-            services.AddApplicationInsightsTelemetry(Configuration);
-            services.AddApplicationInsightsKubernetesEnricher();
         }
 
         private void ConfigureAuthService(IServiceCollection services)
@@ -242,40 +195,6 @@ namespace Basket.API
 
             app.UseAuthentication();
             app.UseAuthorization();
-        }
-
-        // private void RegisterEventBus(IServiceCollection services)
-        // {
-        //     var subscriptionClientName = Configuration["SubscriptionClientName"];
-        //     services.AddSingleton<IEventBus, EventBusRabbitMQ>(sp =>
-        //     {
-        //         var rabbitMQPersistentConnection = sp.GetRequiredService<IRabbitMQPersistentConnection>();
-        //         var iLifetimeScope = sp.GetRequiredService<ILifetimeScope>();
-        //         var logger = sp.GetRequiredService<ILogger<EventBusRabbitMQ>>();
-        //         var eventBusSubcriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
-        //
-        //         var retryCount = 5;
-        //         if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
-        //         {
-        //             retryCount = int.Parse(Configuration["EventBusRetryCount"]);
-        //         }
-        //
-        //         return new EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope,
-        //             eventBusSubcriptionsManager, subscriptionClientName, retryCount);
-        //     });
-        //
-        //     services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
-        //
-        //     services.AddTransient<ProductPriceChangedIntegrationEventHandler>();
-        //     services.AddTransient<OrderStartedIntegrationEventHandler>();
-        // }
-
-        private void ConfigureEventBus(IApplicationBuilder app)
-        {
-            var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
-
-            eventBus.Subscribe<ProductPriceChangedIntegrationEvent, ProductPriceChangedIntegrationEventHandler>();
-            eventBus.Subscribe<OrderStartedIntegrationEvent, OrderStartedIntegrationEventHandler>();
         }
     }
 

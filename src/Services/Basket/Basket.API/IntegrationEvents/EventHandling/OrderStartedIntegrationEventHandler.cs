@@ -22,17 +22,21 @@ namespace Basket.API.IntegrationEvents.EventHandling
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
+        /// <summary>
+        /// TODO:Consumer based on microservice must because of seperate to load on basket deleted call !
+        /// </summary>
+        /// <param name="event"></param>
+        /// <returns></returns>
         public async Task Handle(OrderStartedIntegrationEvent @event)
         {
             using (LogContext.PushProperty("IntegrationEventContext", $"{@event.Id}-{Program.AppName}"))
             {
-                _logger.LogInformation("----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})", @event.Id, Program.AppName, @event);
+                _logger.LogInformation(
+                    "----- Handling integration event: {IntegrationEventId} at {AppName} - ({@IntegrationEvent})",
+                    @event.Id, Program.AppName, @event);
 
                 await _repository.DeleteBasketAsync(@event.UserId.ToString());
             }
         }
     }
 }
-
-
-
