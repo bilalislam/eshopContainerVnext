@@ -22,6 +22,8 @@ namespace Ordering.Infrastructure
         // o yuzden app layer'da 2pc commit olarak yaptık ya da domain service'te. 
         // dispatcher 'ın integration mı yoksa domain event lerden mi sorumlu olacagı bastan belirlenmesi lazım
         // yok domain dispatcher ie ya da ie dispatcher'e domain raise edilmez.
+        // aslında transacton behaivorda outbox pattern ve db call over kill belki ama zaten geçici süre zaten bölünecek
+        // ve eger routing slip lineer devam edip de bu kadar uzun integraion event raise'i varsa zaten yanlıs modellemişizdir.
         public static async Task DispatchDomainEventsAsync(this IMediator mediator, OrderingContext ctx)
         {
             var domainEntities = ctx.ChangeTracker

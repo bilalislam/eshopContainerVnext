@@ -44,7 +44,8 @@ namespace Ordering.API.Application.DomainEventHandlers.BuyerAndPaymentMethodVeri
         // o zaman dispatcher'lar sadece integration olarak kullanılır değilse internal domain event raise ederler.
         // eger bir bc içinde 2 ar var ve sync ve async işlem yapılacak ise mesela basket - basket query sonra da shipping'e event gidecekse
         // o zaman basket 2pc ile inmemory domain handler ile single transaction ile çalışırken beraberinde ise event raise edilmesi için save edilir.
-        // bu şekilde basket query domain handler ile handle edilirken diger event dispatcher ile handle edilip bus'a gider paralel olarak çalışır. !
+        // transaction behavior ile yapılır bu durum ama önemli olan bc'nin tutarlılıgıdır.
+        // buyer , order'in subdomain'idir henuz ayrı bir bc olarak anılamaz çünkü o kadar olgunlasmadı.
         public async Task Handle(BuyerAndPaymentMethodVerifiedDomainEvent buyerPaymentMethodVerifiedEvent, CancellationToken cancellationToken)
         {
             var orderToUpdate = await _orderRepository.GetAsync(buyerPaymentMethodVerifiedEvent.OrderId);
