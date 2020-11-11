@@ -37,8 +37,14 @@ namespace Ordering.API.Application.DomainEventHandlers.BuyerAndPaymentMethodVeri
         // eger save etmeden dispatch ediyorsam aynı bc'de farklı ar'ları yonetiyorumdur yani async olamaz.
         // peki buyer ve order aynı bc'de sync iken save edilene kadar model tamamlanır ve internal handler'lar context tutarlı hale getirir.
         // ama save ettikten sonra artık integration event atabilirim çünkü scope tamamlandı ve başka bir bc bundan etkilenebilir.
-        // ozetle domain eventler hem sync olabilir eger scope tamamlandı ise async olarak bus'a pusblish edebilir.
+        // ozetle domain eventler hem sync olabilir eger scope tamamlandı ise async olarak bus'a publish edebilir.
         // integration handler'lar hem input olarak consumer'lar ile hem de output olarak (scope tamamlanmıs domain handler'dan) kullanılabilirler.
+        // onemli olan nokta ise domain handler'lar domain'e etki eder yani eger context bir bc içinde ise o zaman ar'ları arası işlem tek transaction da
+        // halledilir ve inmemory bus kullanılır. Integration event ile async olarak context'e etki etmek gerekirse zaten bc'yi bolmusum demektir.
+        // o zaman dispatcher'lar sadece integration olarak kullanılır değilse internal domain event raise ederler.
+        // eger bir bc içinde 2 ar var ve sync ve async işlem yapılacak ise mesela basket - basket query sonra da shipping'e event gidecekse
+        // o zaman basket 2pc ile inmemory domain handler ile single transaction ile çalışırken beraberinde ise event raise edilmesi için save edilir.
+        // bu şekilde basket query domain handler ile handle edilirken diger event dispatcher ile handle edilip bus'a gider paralel olarak çalışır. !
         public async Task Handle(BuyerAndPaymentMethodVerifiedDomainEvent buyerPaymentMethodVerifiedEvent, CancellationToken cancellationToken)
         {
             var orderToUpdate = await _orderRepository.GetAsync(buyerPaymentMethodVerifiedEvent.OrderId);
