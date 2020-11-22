@@ -1,4 +1,4 @@
-module github.com/bilalislam/eshopContainerVnext
+module github.com/bilalislam/eshopContainerVnext/consumers
 
 go 1.12
 
